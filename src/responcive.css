@@ -1,0 +1,43 @@
+@media (max-width: 720px) {
+    /* Estilos para el header */
+    .encabezado {
+    height: 80px; /*Reducir la altura del header */
+    padding: 0.5rem; /*Reducir el padding del header */
+    }
+    
+    /* Estilos para el logo */
+    #logo img {
+    height: 30px; /*Reducir el tamaño del logo */
+    }
+    
+    /* Estilos para el nav */
+    .links {
+    display: none; /*Ocultar los enlaces del nav */
+    }
+    
+    .nav1 {
+    justify-content: flex-end; /*Mover el contenedor de búsqueda al extremo derecho del header */
+    }
+    
+    /* Estilos para el buscador */
+    .buscador {
+    margin-right: 0; /*Eliminar el margen derecho del buscador */
+    }
+    
+    input[type="search"] {
+    width: 100%; /*Establecer el ancho del buscador al 100% del contenedor */
+    border-radius: 10px; /*Reducir la curvatura de los bordes del buscador */
+    margin-right: 0.5rem; /*Añadir un margen derecho para separar el botón de búsqueda */
+    }
+    
+    /* Estilos para el botón de búsqueda */
+    .search {
+    right: 0.5rem; /*Mover el botón de búsqueda hacia la izquierda */
+    transform: translate(0, -50%); /*Centrar el botón de búsqueda verticalmente */
+    }
+    
+    /* Estilos para la sesión */
+    .sesion li {
+    margin-left: 1rem; /*Reducir el margen izquierdo del elemento de inicio de sesión */
+    }
+    }
