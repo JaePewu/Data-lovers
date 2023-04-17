@@ -32,7 +32,7 @@ export const header =`<header class="encabezado">
       <div class="buscador">
 
         <form>
-          <input type="search" placeholder="Buscar">
+          <input type="search" placeholder="Buscar...">
           <button type="button"><img src="./icon/search.png" alt="lupa" class="search"></button>
         </form>
 

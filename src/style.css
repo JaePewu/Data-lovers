@@ -144,8 +144,9 @@ body{
 }
 
 input[type="search"] {
-  width: 150px;
+  width: 130px;
   padding: 0.5rem;
+  padding-right: 3rem; /* Aumentar el padding derecho para dejar espacio para el botón */
   border-radius: 20px;
   border: none;
 }
