@@ -11,6 +11,8 @@
 
 body{
     background-image: url('./img/triangulos-blancos.jpg');
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
 }
 
 /*HEADER general*/
@@ -260,14 +262,14 @@ body {
   .buscador {
     margin-right: 0; /*Eliminar el margen derecho del buscador */
   }
-  
+  +*
   /*input[type="search"] {
     display: none;
     width: 100%; /*Establecer el ancho del buscador al 100% del contenedor */
     /*border-radius: 10px; /*Reducir la curvatura de los bordes del buscador */
    /* margin-right: 0.5rem; /*Añadir un margen derecho para separar el botón de búsqueda */
   /*}*/
-  
+
   nav > ul{
     flex-direction: column; 
     background-color: rgb(26, 27, 27); 
