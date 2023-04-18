@@ -16,9 +16,17 @@ body{
 }
 
 /*HEADER general*/
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 /* Estilos para el header */
 .encabezado {
   position: fixed;/*hace que el elemento se posicione de forma fija en la pantalla*/
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,6 +35,7 @@ body{
   background-repeat: repeat-x;/*repetir solo horizontalmente*/
   width: 100%;/*establece el ancho del 100% de la pantalla*/ 
   height: 100px; /*ajuste de altura, modificar si es necesario*/ 
+  padding: 20px;
   color: #fff;
   border-radius: 0 0 20px 20px;
 }
@@ -35,15 +44,12 @@ body{
 .contenedor1,
 .contenedor2 {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .contenedor1 {
   margin-right: auto;
-}
-
-.contenedor-responsive{
-  display: none;
 }
 
 .contenedor2 {
@@ -53,7 +59,7 @@ body{
 
 
 /* Estilos para el logo */
-#logo {
+#logo1 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -73,7 +79,9 @@ body{
   height: 50px; 
   cursor: pointer; 
 } 
-/*SEGUNDO logo y hamburguesa*/
+
+
+/*SEGUNDO logo*/
 #logo2{
   display: none;
 }
@@ -83,70 +91,113 @@ body{
 
 }
 
-#img-menu{
-  display: none;
+
+/*MENU*/
+.menu{
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
 }
 
 /* Estilos para el nav */
-.nav1 {
+nav {
+  display: flex;
+  height: 100%;
+}
+
+nav{
+  height: 100%;
+}
+
+nav > ul{
+  height: 100%;
   display: flex;
 }
 
-.links {
-  display: flex;
-  align-items: center;
+nav ul li{
+  height: 100%;
   list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.links li {
-  margin-left: 2rem;
   position: relative;
 }
 
-.links li:hover > .submenu {
-  display: block;
+nav > ul > li > a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all 300ms ease;
 }
 
-.links a {
-  text-decoration: none;
-  color: #fff;
-  transition: color 0.2s ease-in-out;
-}
-
-.links a:hover {
-  color: #f1c40f;
+nav > ul > li > a:hover{
+  transform: scale(1.1);
+  color: gold;
+  text-shadow:goldenrod;
 }
 
 
 
 /*SUBMENU*/
 .submenu {
-  display: none;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 90px;
+  left: -5px;
   min-width: 200px;
   padding: 1rem;
-  background-color: #171717;
+  background-color: #000000;
   list-style: none;
-  border-radius: 0 10px 10px 10px;
+  border-radius: 10px;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  z-index: 10;/*se utiliza para establecer el orden de apilamiento de elementos*/
+  transition: all 300ms ease;
 }
 
-.submenu li {
+/*.submenu li {
   margin: 0;
+}*/
+
+ li:hover ul{
+  visibility: visible;
+  opacity: 1;
+  top: 70px;
+}
+
+nav ul li ul:before{/*before crea un objeto, para despues*/
+  content: '';/*Contiene un vacio*/
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent; /*se le comienza a dar forma*/
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid rgb(95, 94, 94);
+  position: absolute;
+  top: -12px;
+  left: 20px;
 }
 
 .submenu a {
+  display: block;
   color: #fff;
-  font-weight: bold;
+  padding: 6px;
+  padding-left: 14px;
+  margin-top: 10px;
+  font-size: 14px;
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
+  transition: all 300ms ease;
 }
 
 .submenu a:hover {
-  color: #f1c40f;
+  color: gold;
+  transform: scale(1.2);
+  font-size: 14px;
+  text-shadow: rgba(255, 255, 255, 0.845);
 }
 
 
@@ -156,7 +207,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  *margin-left: auto; /* agregar margen izquierdo automático para alinear a la derecha en pantallas grandes */
+  margin-left: auto; /* agregar margen izquierdo automático para alinear a la derecha en pantallas grandes */
 }
 
 .nav2 {
@@ -190,9 +241,6 @@ input[type="search"] {
 
 
 /*BOTON DE BUSQUEDA*/
-button{
-
-}
 .search {
   position: absolute;/* Establecer la posición absoluta para el botón */
   background-color: #ffffff8f;
@@ -241,4 +289,30 @@ button{
 
 .sesion a:hover {
   color: #f1c40f;
+}
+
+/*MENU HAMBURGUESA*/
+/*HAMBURGUESA*/
+#img-menu{
+  *display: none;
+}
+
+.icon__menu{
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  width: 26px;
+  height: 100%;
+  display: none;
+  align-items: center;
+}
+
+#label__menu{
+  width: 26px;
+  height: 100%;
+  display: none;
+}
+
+#check__menu{
+  display: none;/*desaparecemos el checkbox que se vinvula con la hamburquesa, pero siguen conectados*/
 }
