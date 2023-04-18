@@ -1,5 +1,6 @@
 import { example } from './data.js';
 import data from './data/lol/lol.js';
+
 import { header,/*footer*/ } from './content.js';
 //importa el codigo de content.js y se ve en mi web como html
 const mainContainer = document.createElement(`div`);
