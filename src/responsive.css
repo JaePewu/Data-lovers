@@ -53,7 +53,7 @@
     }
 
     #otro_menu{
-        margin-right: 20px;
+        margin-right: initial;
         position: fixed;
         top: 0;
         left: 0;
