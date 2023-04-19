@@ -87,9 +87,14 @@
   }
 
   #check__menu:checked ~ nav > ul{
-      height: 300px;
+      height: 40vw;
       visibility: visible;
       opacity: 1;
+  }
+
+  /*ARTICULO*/
+  .imgBienvenida{
+    margin-top: 12rem;
   }
 
   /*main{

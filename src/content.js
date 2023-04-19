@@ -45,7 +45,7 @@ export const header =`<header class="encabezado">
 
         <form>
           <input type="search" placeholder="Buscar...">
-          <button type="button"><img src="./icon/search.png" alt="lupa" class="search"></button>
+          <button type="button" id="search"><img src="./icon/search.png" alt="lupa" class="search"></button>
         </form>
 
       </div>
@@ -61,3 +61,30 @@ export const header =`<header class="encabezado">
 
 </header>`
 
+/*export const footer = `<footer> 
+
+<nav class="navfooter"> 
+
+  <ul class="redessociales"> 
+
+    <li><a href="#"></a><img src="./icon/instagram.png" alt="instagram"></li> 
+    <li><a href="#"></a><img src="./icon/youtube.png" alt="youtube"></li> 
+    <li><a href="#"></a><img src="./icon/facebook.png" alt="facebook"></li> 
+    <li><a href="#"></a><img src="./icon/gorjeo.png" alt="">gorjeo</li> 
+    <li><a href="#"></a><img src="./icon/discord.png" alt="discord"></li> 
+
+  </ul> 
+
+
+  <div class="logo-riot2"> 
+
+    <img src="./img/riot-game-blanco-logo.png" alt="logo-riot" id="logo-riot2"> 
+
+  </div> 
+
+</nav> 
+
+ 
+ 
+
+</footer>`*/

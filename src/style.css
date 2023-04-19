@@ -258,6 +258,9 @@ input[type="search"] {
   cursor: pointer;
 }
 
+ #search{
+  *display: none;
+}
 
 
 /* Estilos para el inicio de sesión */
@@ -315,4 +318,58 @@ input[type="search"] {
 
 #check__menu{
   display: none;/*desaparecemos el checkbox que se vinvula con la hamburquesa, pero siguen conectados*/
+}
+
+
+/*ARTICULO*/
+.imgBienvenida{
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative; 
+}
+
+#imgBienvenida{
+  width: 1000px;
+  height: auto;
+  clip-path: polygon(1% 1%, 92% 1%, 99% 16%, 99% 99%, 80% 99%, 9% 99%, 1% 84%, 1% 20%);
+}
+
+
+/*BOTON DE QUE ES LOL*/
+#boton{
+  background: linear-gradient(180deg, rgba(60, 143, 97, 0.916) 39.39%, rgba(49, 98, 153, 0.916) 100%);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: pre-wrap;
+  text-align: center;
+  width: 300px;
+  height: 65px;
+  margin-bottom: -15px;
+  position: absolute; 
+  bottom: 3rem; /*REM unidad de medida relativa que se basa en el tamaño de fuente del elemento raíz*/
+  left: 50%; 
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: translateX(-50%); /* Ajusta la posición según sea necesario */
+}
+
+#boton:hover{
+  background-color: rgb(255, 255, 255, 0.5);
+  color: rgb(227, 194, 4);
+  border: 1px solid rgba(111, 111, 111, 0.612);
+  box-shadow: 2px 3px 6px rgb(136, 136, 136);
+  *transform: scale(1);
+  cursor: pointer;
+}
+
+#boton::before {/*permite insertar contenido antes del contenido de un elemento seleccionado. Este pseudo-elemento se utiliza comúnmente en la creación de efectos visuales y decorativo*/
+  content: "¿Qué es \a League of Legends?";/*\a es un código de escape que se utiliza para representar un salto de línea*/
 }
