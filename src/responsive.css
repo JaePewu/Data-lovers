@@ -61,10 +61,6 @@
       visibility: hidden;
   }
 
-  nav > ul > li > a:hover{
-      transform: scale(1);
-  }
-
   nav ul li ul{
       left: 90px;
   }
@@ -73,9 +69,9 @@
       top: 50px;
   }
 
-  /*nav > ul > li:first-child a{
-      background-position: 20px;
-  }*/
+  nav > ul > li:first-child a{
+      background-position: 20px;/*establece un estilo para el primer enlace dentro del primer elemento de la lista dentro del primer elemento de navegación.*/
+  }
 
 
   #selected{
