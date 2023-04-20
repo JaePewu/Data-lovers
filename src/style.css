@@ -11,8 +11,7 @@
 
 body{
     background-image: url('./img/triangulos-blancos.jpg');
-    background-repeat: repeat-y;
-    background-repeat: repeat-x;
+    background-repeat: repeat;
 }
 
 /*HEADER general*/
@@ -372,4 +371,9 @@ input[type="search"] {
 
 #boton::before {/*permite insertar contenido antes del contenido de un elemento seleccionado. Este pseudo-elemento se utiliza comúnmente en la creación de efectos visuales y decorativo*/
   content: "¿Qué es \a League of Legends?";/*\a es un código de escape que se utiliza para representar un salto de línea*/
+}
+
+/*MAIN GENERAL*/
+main{
+  margin-top: 150px;
 }
