@@ -1,14 +1,45 @@
+@media screen and (max-width: 1400px){
+  #root {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 1100px){
+  #root {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 @media screen and (max-width: 900px){
 
   .contenedor2{
     display:none;
+  }
+
+  #root {
+    grid-template-columns: repeat(3, 1fr);
   }
 } 
 
 @media screen and (max-width: 720px){
   body { 
     height: 100vh; 
-  } 
+  }
+  
+  main{
+    margin-top: 200px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  #root {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #figureCampeon{
+    width: 41.5vw;
+  }
+
 /* Estilos para el header */ 
 
 .encabezado {

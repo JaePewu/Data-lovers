@@ -1,34 +1,44 @@
 #root{
-  margin-top: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
 }
 
-#figureCampeon{
-    display: flex;
+#figureCampeon { 
+    display: flex; 
     justify-content: space-between;
-    align-items: center;
+    flex-direction: column; 
+    align-items: center; 
     position: relative;
-}
+    width: 220px;
+  } 
+
+  #figureCampeon:hover { 
+    transform: scale(0.95); 
+    transition: transform 0.3s ease-in-out; 
+  } 
 
 #imgCampeon{
-    *border-radius: 10vw;
-    margin: 4vw;
-    width: 200px;
-    
+    max-width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    width: 220vw;
+    *height: 300px;
 }
 
-#btnNombre{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    white-space: pre-wrap;
-    text-align: center;
-    width: 150px;
-    height: 50px;
-    position: absolute; 
-    bottom: 0; 
-    left: 50%; 
+#btnNombre{ 
+    display: flex; 
+    font-family: 'IM Fell Great Primer', serif;
+    font-size: 20px;
+    letter-spacing: 0.1em;/*establece el espacio entre caracteres de texto*/
+    justify-content: center; 
+    align-items: center; 
+    white-space: pre-wrap; 
+    text-align: center; 
+    width: 220px; 
+    height: 40px; 
+    color: white;
+    border-radius: 0 0 20px 20px;
+    border-color: rgba(4, 13, 91, 0.837);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: rgba(4, 13, 91, 0.823);
  }

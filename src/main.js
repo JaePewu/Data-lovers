@@ -16,21 +16,9 @@ document.body.appendChild(footContainer);*/
 const root = document.querySelector('#root');
 console.log(data.campeon);
 
-/*data.campeon.forEach(element => {
-  const campeones = document.createElement('div');
-  const imagen = document.createElement('img');
-  const nombre = document.createElement('p');
+const campeon = data.campeon;//Permite que el código se enfoque solo en los datos de los campeones y evite cualquier otra propiedad en el objeto "data"
 
-  imagen.src = element.image;
-  nombre.textContent = element.name;
-  campeones.appendChild(imagen);
-  campeones.appendChild(nombre);
-  root.appendChild(campeones);
-});*/
-
-const campeon = data.campeon;
-
-for (const champion in campeon) {
+for (const champion in campeon) {//recorre todas las propiedades del v objeto llamado "campeon" y para cada propiedad en el objeto, cra lo que necesite
   const campeonData = campeon[champion];
   const campeonElement = document.createElement('figure');
   const imagenCampeon = document.createElement('img');

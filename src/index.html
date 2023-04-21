@@ -12,18 +12,48 @@
 
     <main>
 
+      <div id="filtroYorden">
+
+      <label for="buscarCampeon">Buscar campeón:</label>
+      <input type="text" id="buscar" placeholder="Buscar campeón...">
+      <label for="ordenar">.</label>
+      <select id="ordenar">
+        <option value="">Ordenar por:</option>
+          <option value="a-z">A-Z</option>
+          <option value="z-a">Z-A</option>
+          <option value="ataque">Ataque</option>
+          <option value="magia">Magia</option>
+          <option value="defensa">Defensa</option>
+      </select>
+      <label for="campeon">.</label>
+      <select id="campeon">
+        <option value="">Tipo de campeón</option>
+        <optgroup label="Tipo de campeón">
+          <option value="todos">Todos</option>
+          <option value="asesinos">Asesinos</option>
+          <option value="luchadores">Luchadores</option>
+          <option value="magos">Magos</option>
+          <option value="tiradores">Tiradores</option>
+          <option value="apoyo">Apoyo</option>
+          <option value="tanque">Tanque</option>
+        </optgroup>
+      </select>
+      <label for="dificultad">.</label>
+      <select id="dificultad">
+        <option value="">Dificultad:</option>
+          <option value="facil">Fácil</option>
+          <option value="mediano">Mediano</option>
+          <option value="dificil">Difícil</option>
+      </select>
+    </div>
+
     <div id="root">
 
     </div>
     
   </main>
 
-    
 
-
-
-
-  
     <script src="main.js" type="module"></script>
   </body>
 </html>
