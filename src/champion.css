@@ -14,14 +14,103 @@
   
   /*MENU DE FILTRO Y ORDEN*/
   #filtroYorden{
+    background: white;
+    background-image: linear-gradient(to bottom, black 1px, transparent 1px),
+                    linear-gradient(to top, black 1px, transparent 1px);
+    background-position: left top, left bottom;
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+
+  /*BUSCADOR DE ROLES*/
+  #lupitaCampion{
+    display: flex;
+    width: 30px;
+    position: absolute;
+    background-color: #ffffff8f;
+    border: 1px solid #00000075;
+    border-radius: 50%;
+    transform: translate(-30%, -50%);
+    padding: 0;
+  }
+
+  #buscarCampeon{
+    width: 55rem;
+    margin-left: 0;
+    letter-spacing: 0.7em;
+    font-weight: bold;
+  }
+
+  #buscarCampeon:focus{
+    outline-color: rgba(166, 169, 169, 0.259);
+  }
+/*FIN DEL BUSCADOR*/
+
+/*CONTAINER*/
+  #container1,
+  #container2{
+    height: 40px;
+    display: flex;
+    justify-content:left;
+    margin: 0.3rem;
+  }
+
+  #container2{
+    background-image: linear-gradient(to bottom, black 1px, transparent 1px);
+    background-position: left top;
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+  }
+
+  #ordenarPor,
+  #container2 button,
+  #dificultad{
+    height: 30px;
+    width: 10rem;
+    border: 0;
+    margin: 0.2rem;
+    justify-content: center;
     align-items: center;
-    margin: 3rem;
+    letter-spacing: 0.5em;
+    font-weight: bold;
+    background: white;
+  }
+
+  #container2 button:hover{
+    text-decoration:underline  3px gold;
+  }
+
+  #ordenarPor,
+  #dificultad{
+    width: 15rem;
+    text-align: center;
+  }
+
+  #ordenarPor,
+  #dificultad:focus {
+    outline: none;
+    *outline-color: aqua;
+  }
+
+  #ordenarPor,
+  #buscarCampeon{
+    width: 60vw;
+    border: 0;
+    height: 35px;
+    margin: 0;
+    padding-left: 40px; /* ajusta el espacio entre el borde izquierdo y el icono */
   }
 
 
 
+/*TARJETAS DE CAMPEONES*/
 #figureCampeon { 
     display: flex; 
     justify-content: space-between;

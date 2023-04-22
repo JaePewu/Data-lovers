@@ -10,50 +10,19 @@
   </head>
   <body>
 
-    <main>
+    <article class="imgBienvenida"> 
 
-      <img src="./img/primeros-campeones-LoL.jpg" alt="imagen-de-campeones" id="imagen-de-campeones">
+      <div > 
+  
+        <img src="./img/lol-img-bienvenida.png" alt="imgen de Bienvenida" id="imgBienvenida"> 
+  
+          <button type="button" id="boton"></button> 
+  
+        </div> 
+  
+      </article>
 
-      <div id="filtroYorden">
-
-      <label for="buscarCampeon"><img id="lupitaCampion" src="./icon/search.png" alt="icono-lupa"></label>
-      <input type="text" id="buscar" placeholder="Buscar campeón...">
-      <label for="ordenar">.</label>
-      <select id="ordenar">
-        <option value="ordenarPor">Ordenar por:</option>
-          <option value="a-z">A-Z</option>
-          <option value="z-a">Z-A</option>
-          <option value="ataque">Ataque</option>
-          <option value="magia">Magia</option>
-          <option value="defensa">Defensa</option>
-      </select>
-      <label for="campeon">.</label>
-      <select id="campeon">
-        <option value="">Tipo de campeón</option>
-        <optgroup label="Tipo de campeón">
-          <option value="todos">Todos</option>
-          <option value="asesinos">Asesinos</option>
-          <option value="luchadores">Luchadores</option>
-          <option value="magos">Magos</option>
-          <option value="tiradores">Tiradores</option>
-          <option value="apoyo">Apoyo</option>
-          <option value="tanque">Tanque</option>
-        </optgroup>
-      </select>
-      <label for="dificultad">.</label>
-      <select id="dificultad">
-        <option value="">Dificultad:</option>
-          <option value="facil">Fácil</option>
-          <option value="mediano">Mediano</option>
-          <option value="dificil">Difícil</option>
-      </select>
-    </div>
-
-    <div id="root">
-
-    </div>
-    
-  </main>
+      
 
 
     <script src="main.js" type="module"></script>

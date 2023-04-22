@@ -1,21 +1,27 @@
 import { } from './data.js';
 import data from './data/lol/lol.js';
 
-import { header,/*footer*/ } from './content.js';
+import { header, main, footer } from './content.js';
 //importa el codigo de content.js y se ve en mi web como html
-const mainContainer = document.createElement(`div`);
-mainContainer.innerHTML = header;
+
+
+const encaezadoContainer = document.createElement(`header`);
+encaezadoContainer.innerHTML = header;
+document.body.appendChild(encaezadoContainer);
+
+const footContainer = document.createElement(`footer`);
+footContainer.innerHTML = footer;
+document.body.appendChild(footContainer);
+//console.log(data);
+
+/*LLAMANDO A LA MAIN DE CAMPEONES */
+const mainContainer = document.createElement(`main`);
+mainContainer.innerHTML = main;
 document.body.appendChild(mainContainer);
 
-/*const footContainer = document.createElement(`footer`);
-footContainer.innerHTML = footer;
-document.body.appendChild(footContainer);*/
-//console.log(data);
 
 /*LLAMADO DE DATA*/
 const root = document.querySelector('#root');
-console.log(data.campeon);
-
 const campeon = data.campeon;//Permite que el código se enfoque solo en los datos de los campeones y evite cualquier otra propiedad en el objeto "data"
 
 for (const champion in campeon) {//recorre todas las propiedades del v objeto llamado "campeon" y para cada propiedad en el objeto, cra lo que necesite
