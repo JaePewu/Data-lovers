@@ -380,10 +380,5 @@ input[type="search"] {
 
 /*MAIN GENERAL*/
 main{
-  margin-top: 150px;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin: 8rem 8rem 10rem 5rem;
 }
-
-
-/*MENU DE FILTRO Y ORDEN*/

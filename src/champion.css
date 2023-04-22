@@ -4,13 +4,31 @@
     grid-gap: 20px;
 }
 
+/*IMG DE PAG CAMPEONES*/
+#imagen-de-campeones{
+  object-fit: cover;
+  width: 100%;
+  height: 40vh;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  /*MENU DE FILTRO Y ORDEN*/
+  #filtroYorden{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem;
+  }
+
+
+
 #figureCampeon { 
     display: flex; 
     justify-content: space-between;
     flex-direction: column; 
     align-items: center; 
     position: relative;
-    width: 220px;
+    width: 13.6vw;
   } 
 
   #figureCampeon:hover { 
@@ -21,7 +39,7 @@
 #imgCampeon{
     max-width: 100%;
     border-radius: 20px 20px 0px 0px;
-    width: 220vw;
+    width: 55vw;
     *height: 300px;
 }
 
@@ -34,7 +52,7 @@
     align-items: center; 
     white-space: pre-wrap; 
     text-align: center; 
-    width: 220px; 
+    width: 13.6vw;
     height: 40px; 
     color: white;
     border-radius: 0 0 20px 20px;
