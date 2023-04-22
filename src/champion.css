@@ -95,8 +95,8 @@
 
   #ordenarPor,
   #dificultad:focus {
-    outline: none;
-    *outline-color: aqua;
+    *outline: none;
+    outline-color: rgba(166, 169, 169, 0.259);
   }
 
   #ordenarPor,

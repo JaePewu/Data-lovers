@@ -114,7 +114,6 @@ export const footer = `<footer>
     <li><a href="#"></a><img src="./icon/instagram.png" alt="instagram"></li> 
     <li><a href="#"></a><img src="./icon/youtube.png" alt="youtube"></li> 
     <li><a href="#"></a><img src="./icon/facebook.png" alt="facebook"></li> 
-    <li><a href="#"></a><img src="./icon/gorjeo.png" alt="">gorjeo</li> 
     <li><a href="#"></a><img src="./icon/discord.png" alt="discord"></li> 
 
   </ul> 
