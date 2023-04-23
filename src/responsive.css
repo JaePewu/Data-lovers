@@ -38,16 +38,22 @@
 
 @media screen and (max-width: 720px){
   body { 
-    height: 100vh; 
+    *height: 100vw; 
   }
   
   main{
     margin-top: 200px;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  #imgBienvenida{
+    width: 50rem;
+    transition: all 400ms ease;;
   }
 
   #root {
+    margin: 0;
     grid-template-columns: repeat(2, 1fr);
   }
 

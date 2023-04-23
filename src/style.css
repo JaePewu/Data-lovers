@@ -7,6 +7,8 @@
     box-sizing: border-box;
     font-family: 'Julius Sans One', sans-serif;
     text-decoration: none;
+    
+    
 }
 
 body{
@@ -14,6 +16,13 @@ body{
     background-repeat: repeat;
 }
 
+
+
+
+
+
+
+/*ESTILOS DEL NAVEMEGADOR MENU*/
 /*HEADER general*/
 header{
   width: 100%;
@@ -57,8 +66,6 @@ header{
   margin-left: auto;
 }
 
-
-
 /* Estilos para el logo */
 #logo1 {
   display: flex;
@@ -91,7 +98,6 @@ header{
   width: 150px;
 
 }
-
 
 /*MENU*/
 .menu{
@@ -138,7 +144,6 @@ nav > ul > li > a:hover{
   color: gold;
   text-shadow:goldenrod;
 }
-
 
 
 /*SUBMENU*/
@@ -236,8 +241,6 @@ input[type="search"] {
   margin-right: auto; /* Mueve el contenedor hacia la izquierda */
 }
 
-
-
 /*BOTON DE BUSQUEDA*/
 .search {
   position: absolute;/* Establecer la posición absoluta para el botón */
@@ -259,8 +262,6 @@ input[type="search"] {
  #search{
   *display: none;
 }
-
-
 
 /* ESTILOS PARA INICIO DE SESION */
 .sesion .inicio-sesion{
@@ -294,7 +295,6 @@ input[type="search"] {
 }
 
 
-
 /*MENU HAMBURGUESA*/
 /*HAMBURGUESA*/
 #img-menu{
@@ -320,22 +320,28 @@ input[type="search"] {
 #check__menu{
   display: none;/*desaparecemos el checkbox que se vinvula con la hamburquesa, pero siguen conectados*/
 }
+/*FIN ESTILOS DEL NAVEMEGADOR MENU */
 
+/*MAIN GENERAL*/ 
+main{
+ margin: 5rem;
+} 
 
 
 /*ARTICULO CONTENEDOR DE IMG DE BIENVENIDA*/
 .imgBienvenida{
   margin-top: 10rem;
-  margin-bottom: 5rem;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   position: relative; 
 }
 
 #imgBienvenida{
-  width: 1000px;
+  width: 60rem;
   height: auto;
+  object-fit: cover;
   clip-path: polygon(1% 1%, 92% 1%, 99% 16%, 99% 99%, 80% 99%, 9% 99%, 1% 84%, 1% 20%);
 }
 
@@ -350,7 +356,7 @@ input[type="search"] {
   align-items: center;
   white-space: pre-wrap;
   text-align: center;
-  width: 300px;
+  width: 20rem;
   height: 65px;
   margin-bottom: -15px;
   position: absolute; 
@@ -358,7 +364,7 @@ input[type="search"] {
   left: 50%; 
   font-weight: 600;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 25px;/*establece la altura de línea dentro de un elemento para hacer mas legible la letra */
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transform: translateX(-50%); /* Ajusta la posición según sea necesario */
 }
@@ -380,10 +386,6 @@ input[type="search"] {
 
 
 
-/*MAIN GENERAL*/
-main{
-  margin: 8rem 8rem 10rem 5rem;
-}
 
 
 

@@ -1,5 +1,4 @@
 export const header =`<header class="encabezado">
-
 <div class="contenedor1">
   <div id="logo1">
     <img src="./img/riot-game-blanco-logo.png" alt="logo-riot" id="logo-riot">
@@ -10,7 +9,6 @@ export const header =`<header class="encabezado">
     <img src="./img/LoL-logo.png" alt="logo-LoL" id="logo-lol-mediano">
   </div> 
   </div>
-
   <div class="menu">
     <input type="checkbox" id="check__menu"> <!--al tener el mismo ID con FOR, le doy una misma funcion-->
     <label for="check__menu" id="label__menu">
@@ -34,36 +32,26 @@ export const header =`<header class="encabezado">
       </ul>
     </nav>
   </div>
-
 </div>
 <div class="contenedor2"> 
-
   <nav class="nav2"> 
-
     <div class="contenedor-busqueda">
       <div class="buscador">
-
         <form>
           <input type="search" placeholder="Buscar...">
           <button type="button" id="search"><img src="./icon/search.png" alt="lupa" class="search"></button>
         </form>
-
       </div>
     </div>
-
     <ul class="sesion"> 
       <li><a href="#"><img src="./icon/iniciodesesion-2px.png" class="inicio-sesion" alt="icon">Inicio de sesion</a></li>
     </ul>
-
   </nav> 
-
     </div> 
-
 </header>`
 
 export const main = `<main>
 <img src="./img/primeros-campeones-LoL.jpg" alt="imagen-de-campeones" id="imagen-de-campeones">
-
 <div id="filtroYorden">
   <div id="container1">
 <label for="buscarCampeon"><img id="lupitaCampion" src="./icon/search.png" alt="icono-lupa"></label>
@@ -78,7 +66,6 @@ export const main = `<main>
     <option value="defensa">Defensa</option>
 </select>
 </div>
-
 <div id="container2">
   <label for="todos-los-roles" id="roles">
     <button type="button" value="todos">Todos</button>
@@ -99,29 +86,21 @@ export const main = `<main>
 </select>
 </div>
 </div>
-
 <div id="root">
-
 </div>
-
 </main>`
 
 export const footer = `<footer> 
-
 <nav class="navfooter"> 
   <ul class="redessociales"> 
-
     <li><a href="#"></a><img src="./icon/instagram.png" alt="instagram"></li> 
     <li><a href="#"></a><img src="./icon/youtube.png" alt="youtube"></li> 
     <li><a href="#"></a><img src="./icon/facebook.png" alt="facebook"></li> 
+    <li><a href="#"></a><img src="./icon/gorjeo.png" alt="">gorjeo</li> 
     <li><a href="#"></a><img src="./icon/discord.png" alt="discord"></li> 
-
   </ul> 
-
   <div class="logo-riot2"> 
     <img src="./img/riot-game-blanco-logo.png" alt="logo-riot" id="logo-riot2"> 
   </div> 
-
 </nav> 
-
 </footer>`
