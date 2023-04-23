@@ -14,6 +14,9 @@ footContainer.innerHTML = footer;
 document.body.appendChild(footContainer);
 //console.log(data);
 
+
+
+
 /*LLAMANDO A LA MAIN DE CAMPEONES */
 const mainContainer = document.createElement(`main`);
 mainContainer.innerHTML = main;
