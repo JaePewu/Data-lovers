@@ -6283,7 +6283,7 @@ export default {
       key: "106",
       name: "Volibear",
       title: "the Thunder's Roar",
-      img: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Volibear_0.jpg",
+      img: "https://steamuserimages-a.akamaihd.net/ugc/1011566519983059449/771AE68923CD105968F3EEE55209E5764401FFC8/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false",
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Volibear_0.jpg",
       blurb:
