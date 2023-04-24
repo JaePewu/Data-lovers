@@ -2,7 +2,7 @@ export const header =`<header class="encabezado">
 <div class="contenedor1">
   <div id="logo1">
     <img src="./img/riot-game-blanco-logo.png" alt="logo-riot" id="logo-riot">
-    <img src="./img/lol-logo-chibi.png" alt="logo-lol" id="logo-lol">
+    <a href="#" id="logo-lol-link"><img src="./img/lol-logo-chibi.png" alt="logo-lol" id="logo-lol"> </a>
   </div>
   <div class="contenedor-responsive">
   <div id="logo2">
@@ -15,8 +15,8 @@ export const header =`<header class="encabezado">
         <i class="icon__menu"><img src="./icon/menu-2px.png" alt="menu" id="img-menu"></i>
       </label> <!--fas fa-bars i class + lo que ya tiene con espacio-->
     
-    <nav <!class="nav1">
-      <ul <!class="links">
+    <nav>
+      <ul>
         <li><a href="#">Eventos</a></li>
         <li><a href="#">Noticias</a>
             <ul class="submenu"> 
@@ -51,44 +51,43 @@ export const header =`<header class="encabezado">
 </header>`
 
 export const main = `<main>
-<img src="./img/primeros-campeones-LoL.jpg" alt="imagen-de-campeones" id="imagen-de-campeones">
-<div id="filtroYorden">
-  <div id="container1">
-<label for="buscarCampeon"><img id="lupitaCampion" src="./icon/search.png" alt="icono-lupa"></label>
-<input type="search" id="buscarCampeon" placeholder="Buscar campeón...">
-<label for="ordenarPor">|</label>
-<select id="ordenarPor">
-  <option value="ordenarPor">Ordenar por:</option>
-    <option value="a-z">A-Z</option>
-    <option value="z-a">Z-A</option>
-    <option value="ataque">Ataque</option>
-    <option value="magia">Magia</option>
-    <option value="defensa">Defensa</option>
-</select>
-</div>
-<div id="container2">
-  <label for="todos-los-roles" id="roles">
-    <button type="button" value="todos">Todos</button>
-    <button type="button" value="asesinos">Asesinos</button>
-    <button type="button" value="luchadores">Luchadores</button>
-    <button type="button" value="magos">Magos</button>
-    <button type="button" value="tiradores">Tiradores</button>
-    <button type="button" value="apoyo">Apoyo</button>
-    <button type="button" value="tanque">Tanque</button>
-  </label>
-  
-<label for="dificultad">|</label>
-<select id="dificultad">
-  <option value="">Dificultad:</option>
-    <option value="facil">Fácil</option>
-    <option value="mediano">Mediano</option>
-    <option value="dificil">Difícil</option>
-</select>
-</div>
-</div>
-<div id="root">
-</div>
-</main>`
+      <img src="./img/primeros-campeones-LoL.jpg" alt="imagen-de-campeones" id="imagen-de-campeones">
+      <div id="filtroYorden">
+        <div id="container1">
+      <label for="buscarCampeon"><img id="lupitaCampion" src="./icon/search.png" alt="icono-lupa"></label>
+      <input type="search" id="buscarCampeon" placeholder="Buscar campeón...">
+      <label for="ordenarPor">|</label>
+      <select id="ordenarPor">
+        <option value="ordenarPor">Ordenar por</option>
+          <option value="a-z">A-Z</option>
+          <option value="z-a">Z-A</option>
+          <option value="ataque">Ataque</option>
+          <option value="magia">Magia</option>
+          <option value="defensa">Defensa</option>
+      </select>
+      </div>
+      <div id="container2">
+        <ul <!for="todos-los-roles" id="roles">
+          <li id="todos">Todos</li>
+          <li id="asesinos">Asesinos</li>
+          <li id="luchadores">Luchadores</li>
+          <li id="magos">Magos</li>
+          <li id="tiradores">Tiradores</li>
+          <li id="apoyo">Apoyo</li>
+          <li id="tanque"> Tanque</li>
+        </ul>
+        
+      <label for="dificultad" >|</label>
+      <select id="dificultad">
+        <option value="">Dificultad</option>
+          <option value="facil">Fácil</option>
+          <option value="mediano">Mediano</option>
+          <option value="dificil">Difícil</option>
+      </select>
+      </div>
+      </div>
+      <div id="root"></div>
+      </main>`
 
 export const footer = `<footer> 
 <nav class="navfooter"> 

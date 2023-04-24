@@ -16,36 +16,46 @@ document.body.appendChild(footContainer);
 
 
 
-
 /*LLAMANDO A LA MAIN DE CAMPEONES */
 const mainContainer = document.createElement(`main`);
 mainContainer.innerHTML = main;
 document.body.appendChild(mainContainer);
 
 
-/*LLAMADO DE DATA*/
+/* ******LLAMADO DE DATA CAMPEONES********* */
 const root = document.querySelector('#root');
-const campeon = data.campeon;//Permite que el código se enfoque solo en los datos de los campeones y evite cualquier otra propiedad en el objeto "data"
-
-for (const champion in campeon) {//recorre todas las propiedades del v objeto llamado "campeon" y para cada propiedad en el objeto, cra lo que necesite
-  const campeonData = campeon[champion];
-  const campeonElement = document.createElement('figure');
-  const imagenCampeon = document.createElement('img');
-  const nombre = document.createElement('button');
-  //const rol = document.createElement('p')
-
-  imagenCampeon.src = campeonData.img;
-  nombre.textContent = campeonData.name;
-  //rol.textContent = campeonData.tags;
-
-  campeonElement.setAttribute("id", "figureCampeon");
-  imagenCampeon.setAttribute("id", "imgCampeon");
-  nombre.setAttribute("id", "btnNombre");
-  //rol.setAttribute("id","rol");
+const campeones = Object.values(data.campeones); //transformo en matriz la data.
 
 
-  campeonElement.appendChild(imagenCampeon);
-  campeonElement.appendChild(nombre);
-  //campeonElement.appendChild(rol);
-  root.appendChild(campeonElement);
+function desplegarCampeones(dataCampeones){
+  dataCampeones.forEach(element => {
+    const campeonElement = document.createElement('figure'); 
+    const imagenCampeon = document.createElement('img'); 
+    const nombre = document.createElement('button'); 
+    //const rol = document.createElement('p') 
+
+    imagenCampeon.src = element.img; 
+    nombre.textContent = element.name; 
+    //rol.textContent = campeonData.tags; 
+
+    campeonElement.setAttribute("id", "figureCampeon"); 
+    imagenCampeon.setAttribute("id", "imgCampeon"); 
+    nombre.setAttribute("id", "btnNombre"); 
+    //rol.setAttribute("id","rol"); 
+  
+    campeonElement.appendChild(imagenCampeon); 
+    campeonElement.appendChild(nombre); 
+    //campeonElement.appendChild(rol); 
+    root.appendChild(campeonElement); 
+  })
 }
+desplegarCampeones(campeones);
+
+
+
+
+
+
+
+
+
