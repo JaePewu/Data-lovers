@@ -1,4 +1,4 @@
-import { filtroPorRol, ordenarPorZa, ordenarPorAz } from './data.js';
+import { filtroPorRol, ordenarPorZa, ordenarPorAz, ordenarPoder } from './data.js';
 import data from './data/lol/lol.js';
 
 import { header, main, footer } from './content.js';
@@ -20,10 +20,10 @@ mainContainer.innerHTML = main;
 document.body.appendChild(mainContainer);
 
 
+
 /* ******LLAMADO DE DATA CAMPEONES********* */
 const root = document.querySelector('#root');
 const campeones = Object.values(data.campeones); //transformo en matriz la data.
-
 
 function desplegarCampeones(dataCampeones){
   dataCampeones.forEach(element => {
@@ -87,9 +87,13 @@ document.querySelector("#magos").addEventListener("click", () => {
 document.querySelector("#tiradores").addEventListener("click", () => {
   root.innerHTML = "";
   const tagSelect = "Marksman";
+  console.log(dataFiltrada);
   dataFiltrada = filtroPorRol(campeones,tagSelect);
+  console.log(dataFiltrada);
   laOrdenadora();
+  console.log(dataFiltrada);
   desplegarCampeones(dataFiltrada);
+  console.log(dataFiltrada);
 });
 
 document.querySelector("#apoyo").addEventListener("click", () => {
@@ -110,28 +114,44 @@ document.querySelector("#tanque").addEventListener("click", () => {
 
 
 const ordenarPorSelect = document.getElementById("ordenarPor");
+//const campeonInfo = dataFiltrada.flatMap(campeon => campeon.info)
 
-
-
-
-
-ordenarPorSelect.addEventListener("change", laOrdenadora);
+ordenarPorSelect.addEventListener("change", () => {
+  laOrdenadora();
+  desplegarCampeones(dataFiltrada);
+});
 
 function laOrdenadora(){
   const value = ordenarPorSelect.value;
+  /*let selectPoder = campeones.info;*/
 
   if (value === "z-a"){
     root.innerHTML = "";
     dataFiltrada = ordenarPorZa(dataFiltrada);
-    desplegarCampeones(dataFiltrada);
+    
   }else if(value === "a-z"){
     root.innerHTML = "";
     dataFiltrada = ordenarPorAz(dataFiltrada);
-    desplegarCampeones(dataFiltrada);
+   
+  }else if(value === "ataque"){
+    root.innerHTML = "";
+    const poder = "attack"
+    dataFiltrada = ordenarPoder(dataFiltrada,poder);
+    
+  }else if(value === "magia"){
+    root.innerHTML = "";
+    const  poder = "magic"
+    dataFiltrada = ordenarPoder(dataFiltrada, poder);
+
+  }else if(value === "defensa"){
+    root.innerHTML = "";
+    const poder = "defense"
+    dataFiltrada = ordenarPoder(dataFiltrada, poder);
+
   }else{
     root.innerHTML = "";
     dataFiltrada = ordenarPorAz(dataFiltrada);
-    desplegarCampeones(dataFiltrada);
+    
   }
 
 }

@@ -2,7 +2,7 @@
 export const filtroPorRol = (baseDatos, rol) => {
   const dataFiltrada = baseDatos.filter(campeon => campeon.tags.includes(rol));
   return dataFiltrada;
-};
+};//*FIN DE FILTRO*//
 
 
 // **** FUNCION PARA ORDENAR DE A -Z Y DE Z -A ***** //
@@ -20,3 +20,8 @@ export const ordenarPorAz = (baseDatos) => {
   const assassinssorted = assassins.sort((a,z) => (a.name < z.name ? 1 : -1)); 
   return 'OMG';
 };*/
+
+export const ordenarPoder = (baseDatos,poder) => {
+  const campeonesPoder = baseDatos.sort((poderA, poderB) => poderB.info[poder] - poderA.info[poder]);
+  return campeonesPoder;
+};
