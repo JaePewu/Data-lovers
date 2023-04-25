@@ -132,7 +132,7 @@ function laOrdenadora(){
     root.innerHTML = "";
     dataFiltrada = ordenarPorAz(dataFiltrada);
     desplegarCampeones(dataFiltrada);
-}
+  }
 
 }
 

@@ -5,7 +5,7 @@ export const filtroPorRol = (baseDatos, rol) => {
 };
 
 
-
+// **** FUNCION PARA ORDENAR DE A -Z Y DE Z -A ***** //
 export const ordenarPorZa = (baseDatos) =>{
   const campeonesZA = baseDatos.sort((a, z) => z.name.localeCompare(a.name));
   return campeonesZA;
