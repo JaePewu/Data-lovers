@@ -1,4 +1,4 @@
-import { } from './data.js';
+import { filtroPorRol, ordenarPorZa, ordenarPorAz } from './data.js';
 import data from './data/lol/lol.js';
 
 import { header, main, footer } from './content.js';
@@ -12,11 +12,9 @@ document.body.appendChild(encaezadoContainer);
 const footContainer = document.createElement(`footer`);
 footContainer.innerHTML = footer;
 document.body.appendChild(footContainer);
-//console.log(data);
 
 
-
-/*LLAMANDO A LA MAIN DE CAMPEONES */
+/* *****LLAMANDO A LA MAIN DE CAMPEONES******* */
 const mainContainer = document.createElement(`main`);
 mainContainer.innerHTML = main;
 document.body.appendChild(mainContainer);
@@ -29,27 +27,118 @@ const campeones = Object.values(data.campeones); //transformo en matriz la data.
 
 function desplegarCampeones(dataCampeones){
   dataCampeones.forEach(element => {
-    const campeonElement = document.createElement('figure'); 
+    const campeonFigure = document.createElement('figure'); 
     const imagenCampeon = document.createElement('img'); 
-    const nombre = document.createElement('button'); 
-    //const rol = document.createElement('p') 
-
+    const nombreBoton = document.createElement('button'); 
+    
+    
     imagenCampeon.src = element.img; 
-    nombre.textContent = element.name; 
-    //rol.textContent = campeonData.tags; 
+    nombreBoton.textContent = element.name;
+    
 
-    campeonElement.setAttribute("id", "figureCampeon"); 
+    campeonFigure.setAttribute("id", "figureCampeon"); 
     imagenCampeon.setAttribute("id", "imgCampeon"); 
-    nombre.setAttribute("id", "btnNombre"); 
-    //rol.setAttribute("id","rol"); 
-  
-    campeonElement.appendChild(imagenCampeon); 
-    campeonElement.appendChild(nombre); 
-    //campeonElement.appendChild(rol); 
-    root.appendChild(campeonElement); 
+    nombreBoton.setAttribute("id", "btnNombre"); 
+
+    campeonFigure.appendChild(imagenCampeon); 
+    campeonFigure.appendChild(nombreBoton); 
+    
+    root.appendChild(campeonFigure); 
   })
 }
 desplegarCampeones(campeones);
+
+
+/* **** FILTROS POR ROL***** */
+let dataFiltrada = campeones;
+
+document.querySelector("#todos").addEventListener("click", () => {
+  root.innerHTML = "";
+  dataFiltrada = campeones;
+  laOrdenadora();
+  desplegarCampeones(dataFiltrada);
+});
+
+document.querySelector("#asesinos").addEventListener("click", () => {
+  root.innerHTML = "";
+  const tagSelect = "Assassin";
+  dataFiltrada = filtroPorRol(campeones,tagSelect);
+  laOrdenadora();
+  desplegarCampeones(dataFiltrada);
+  
+});
+
+document.querySelector("#luchadores").addEventListener("click", () => {
+  root.innerHTML = "";
+  const tagSelect = "Fighter";
+  dataFiltrada = filtroPorRol(campeones,tagSelect);
+  laOrdenadora();
+  desplegarCampeones(dataFiltrada);
+});
+
+document.querySelector("#magos").addEventListener("click", () => {
+  root.innerHTML = "";
+  const tagSelect = "Mage";
+  dataFiltrada = filtroPorRol(campeones,tagSelect);
+  laOrdenadora();
+  desplegarCampeones(dataFiltrada);
+});
+
+document.querySelector("#tiradores").addEventListener("click", () => {
+  root.innerHTML = "";
+  const tagSelect = "Marksman";
+  dataFiltrada = filtroPorRol(campeones,tagSelect);
+  laOrdenadora();
+  desplegarCampeones(dataFiltrada);
+});
+
+document.querySelector("#apoyo").addEventListener("click", () => {
+  root.innerHTML = "";
+  const tagSelect = "Support";
+  dataFiltrada = filtroPorRol(campeones,tagSelect);
+  laOrdenadora();
+  desplegarCampeones(dataFiltrada);
+});
+
+document.querySelector("#tanque").addEventListener("click", () => {
+  root.innerHTML = "";
+  const tagSelect = "Tank";
+  dataFiltrada = filtroPorRol(campeones,tagSelect);
+  laOrdenadora();
+  desplegarCampeones(dataFiltrada);
+});/*FIN filtrado por rol */
+
+
+const ordenarPorSelect = document.getElementById("ordenarPor");
+
+
+
+
+
+ordenarPorSelect.addEventListener("change", laOrdenadora);
+
+function laOrdenadora(){
+  const value = ordenarPorSelect.value;
+
+  if (value === "z-a"){
+    root.innerHTML = "";
+    dataFiltrada = ordenarPorZa(dataFiltrada);
+    desplegarCampeones(dataFiltrada);
+  }else if(value === "a-z"){
+    root.innerHTML = "";
+    dataFiltrada = ordenarPorAz(dataFiltrada);
+    desplegarCampeones(dataFiltrada);
+  }else{
+    root.innerHTML = "";
+    dataFiltrada = ordenarPorAz(dataFiltrada);
+    desplegarCampeones(dataFiltrada);
+
+  }
+
+}
+
+
+
 
 
 
