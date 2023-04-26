@@ -21,7 +21,17 @@ export const ordenarPorAz = (baseDatos) => {
   return 'OMG';
 };*/
 
+
+
+//**** FUNCION ORDENAR POR *******/
 export const ordenarPoder = (baseDatos,poder) => {
   const campeonesPoder = baseDatos.sort((poderA, poderB) => poderB.info[poder] - poderA.info[poder]);
   return campeonesPoder;
+};
+
+
+//******* FUNCION PARA SACAR PORCENTAJE *********/
+export const porcentajeRoles = (dataCampeones, dataRol) => {
+  const rolTotal = (dataRol / dataCampeones) * 100;
+  return rolTotal;
 };

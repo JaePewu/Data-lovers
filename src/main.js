@@ -1,4 +1,4 @@
-import { filtroPorRol, ordenarPorZa, ordenarPorAz, ordenarPoder } from './data.js';
+import { filtroPorRol, ordenarPorZa, ordenarPorAz, ordenarPoder, /*porcentajeRoles*/ } from './data.js';
 import data from './data/lol/lol.js';
 
 import { header, main, footer } from './content.js';
@@ -51,6 +51,8 @@ desplegarCampeones(campeones);
 
 /* **** FILTROS POR ROL***** */
 let dataFiltrada = campeones;
+const totalCampeones = campeones.length;
+console.log(totalCampeones);
 
 document.querySelector("#todos").addEventListener("click", () => {
   root.innerHTML = "";
@@ -63,9 +65,9 @@ document.querySelector("#asesinos").addEventListener("click", () => {
   root.innerHTML = "";
   const tagSelect = "Assassin";
   dataFiltrada = filtroPorRol(campeones,tagSelect);
+  
   laOrdenadora();
   desplegarCampeones(dataFiltrada);
-  
 });
 
 document.querySelector("#luchadores").addEventListener("click", () => {
@@ -87,13 +89,9 @@ document.querySelector("#magos").addEventListener("click", () => {
 document.querySelector("#tiradores").addEventListener("click", () => {
   root.innerHTML = "";
   const tagSelect = "Marksman";
-  console.log(dataFiltrada);
   dataFiltrada = filtroPorRol(campeones,tagSelect);
-  console.log(dataFiltrada);
   laOrdenadora();
-  console.log(dataFiltrada);
   desplegarCampeones(dataFiltrada);
-  console.log(dataFiltrada);
 });
 
 document.querySelector("#apoyo").addEventListener("click", () => {
@@ -151,7 +149,6 @@ function laOrdenadora(){
   }else{
     root.innerHTML = "";
     dataFiltrada = ordenarPorAz(dataFiltrada);
-    
   }
 
 }
