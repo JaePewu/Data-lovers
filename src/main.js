@@ -14,10 +14,16 @@ footContainer.innerHTML = footer;
 document.body.appendChild(footContainer);
 
 
+
 /* *****LLAMANDO A LA MAIN DE CAMPEONES******* */
 const mainContainer = document.createElement(`main`);
 mainContainer.innerHTML = main;
 document.body.appendChild(mainContainer);
+
+const footContainer2 = footContainer.cloneNode(true);/* código crea una copia exacta*/
+footContainer2.classList.add('footerCampeon');
+document.body.appendChild(footContainer2);
+
 
 
 
@@ -49,12 +55,29 @@ function desplegarCampeones(dataCampeones){
 desplegarCampeones(campeones);
 
 
+/******  ******/
+const todos = document.querySelector("#todos");
+/*const roleCheckboxes = document.querySelectorAll("#roles .role");
+
+todos.addEventListener("change", function() {
+  if (this.checked) {
+    roleCheckboxes.forEach(function(checkbox) {
+      checkbox.style.display = "block";
+    });
+  } else {
+    roleCheckboxes.forEach(function(checkbox) {
+      checkbox.style.display = "none";
+    });
+  }
+});*/
+
 /* **** FILTROS POR ROL***** */
 let dataFiltrada = campeones;
+
 const totalCampeones = campeones.length;
 console.log(totalCampeones);
 
-document.querySelector("#todos").addEventListener("click", () => {
+todos.addEventListener("click", () => {
   root.innerHTML = "";
   dataFiltrada = campeones;
   laOrdenadora();
@@ -65,9 +88,9 @@ document.querySelector("#asesinos").addEventListener("click", () => {
   root.innerHTML = "";
   const tagSelect = "Assassin";
   dataFiltrada = filtroPorRol(campeones,tagSelect);
-  
   laOrdenadora();
   desplegarCampeones(dataFiltrada);
+  
 });
 
 document.querySelector("#luchadores").addEventListener("click", () => {
@@ -150,8 +173,12 @@ function laOrdenadora(){
     root.innerHTML = "";
     dataFiltrada = ordenarPorAz(dataFiltrada);
   }
-
 }
+
+/*const selectRoles = document.getElementById("#role")
+selectRoles.addEventListener("change", () => {
+  
+})*/
 
 
 

@@ -18,7 +18,8 @@ body{
 
 
 
-/*ESTILOS DEL NAVEMEGADOR MENU*/
+
+/*********ESTILOS DEL NAVEMEGADOR MENU***********/
 /*HEADER general*/
 header{
   width: 100%;
@@ -200,7 +201,6 @@ nav ul li ul:before{/*before crea un objeto, para despues*/
 
 
 
-
 /* ESTILOS PARA EL BUSCADOR  PRINCIPAL */
 .contenedor2 {
   display: flex;
@@ -325,7 +325,7 @@ main{
 } 
 
 
-/*ARTICULO CONTENEDOR DE IMG DE BIENVENIDA*/
+/**********ARTICULO CONTENEDOR DE IMG DE BIENVENIDA**************/
 .imgBienvenida{
   margin-top: 10rem;
   width: 100%;
@@ -383,11 +383,7 @@ main{
 
 
 
-
-
-
-
-/*FOOTER*/
+/************FOOTER********************/
 footer {
   background-image: url('./img/espacio-verde.jpg');
   display: flex;
@@ -428,3 +424,15 @@ footer {
   opacity: 0.7;
 }
 
+ p > i{
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold; 
+}
+
+/**** FOOT DE CAMPEONES ****/
+footer .footerCampeon{
+  width: 100%;
+}

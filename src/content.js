@@ -67,14 +67,14 @@ export const main = `<main>
       </select>
       </div>
       <div id="container2">
-        <ul <!for="todos-los-roles" id="roles">
-          <li id="todos">Todos</li>
-          <li id="asesinos">Asesinos</li>
-          <li id="luchadores">Luchadores</li>
-          <li id="magos">Magos</li>
-          <li id="tiradores">Tiradores</li>
-          <li id="apoyo">Apoyo</li>
-          <li id="tanque"> Tanque</li>
+      <ul id="roles">
+          <li id="todos"> Todos </li>
+          <li class="role" id="asesinos">Asesinos</li>
+          <li class="role" id="luchadores">Luchadores</li>
+          <li class="role" id="magos">Magos</li>
+          <li class="role" id="tiradores">Tiradores</li>
+          <li class="role" id="apoyo">Apoyo</li>
+          <li class="role" id="tanque"> Tanque</li>
         </ul>
         
       <label for="dificultad" >|</label>
@@ -99,6 +99,23 @@ export const footer = `<footer>
   </ul> 
   <div class="logo-riot2"> 
     <img src="./img/riot-game-blanco-logo.png" alt="logo-riot" id="logo-riot2"> 
-  </div> 
+  </div>
+  <p class="derechoReservados"> <i> ©2023   Derechos reservados por 🏵Jae-pewu.</i> </p>
 </nav> 
 </footer>`
+
+/* <input type="checkbox" id="todos" name="roles[]" value="todos">
+<label for="todos"> aqui iria TODOS LOS ROLES
+<img src="./icon/expand_more-2px.png" id="icon-expand" alt="icon-expand">
+        </label>*/
+
+/*<label for="role" ></label>
+      <select id="role">
+        <option id="todos">Todos los roles</option>
+          <option id="asesinos">Asesinos</option>
+          <option id="luchadores">luchadores</option>
+          <option id="magos">Magos</option>
+          <option id="tiradores">Tiradores</option>
+          <option id="apoyo">Apoyo</option>
+          <option id="tanque">Tanque</option>
+      </select> */

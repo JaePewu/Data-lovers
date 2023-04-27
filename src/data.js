@@ -13,15 +13,13 @@ export const ordenarPorZa = (baseDatos) =>{
 
 export const ordenarPorAz = (baseDatos) => {
   const campeonesAZ = baseDatos.sort ((a, z) => a.name.localeCompare(z.name));
-  return campeonesAZ;
+  return campeonesAZ;/*Localcompare compara dos cadenas de texto */
 };
 
 /*const anotherExample = () => {
   const assassinssorted = assassins.sort((a,z) => (a.name < z.name ? 1 : -1)); 
   return 'OMG';
 };*/
-
-
 
 //**** FUNCION ORDENAR POR *******/
 export const ordenarPoder = (baseDatos,poder) => {
