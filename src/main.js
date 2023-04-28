@@ -74,8 +74,8 @@ todos.addEventListener("change", function() {
 /* **** FILTROS POR ROL***** */
 let dataFiltrada = campeones;
 
-const totalCampeones = campeones.length;
-console.log(totalCampeones);
+/*const totalCampeones = campeones.length;
+console.log(totalCampeones);*/
 
 todos.addEventListener("click", () => {
   root.innerHTML = "";
