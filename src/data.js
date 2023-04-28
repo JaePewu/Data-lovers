@@ -29,7 +29,7 @@ export const ordenarPoder = (baseDatos,poder) => {
 
 
 //******* FUNCION PARA SACAR PORCENTAJE *********/
-export const porcentajeRoles = (dataCampeones, dataRol) => {
+/*export const porcentajeRoles = (dataCampeones, dataRol) => {
   const rolTotal = (dataRol / dataCampeones) * 100;
   return rolTotal;
-};
+};*/
