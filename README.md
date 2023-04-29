@@ -4,7 +4,7 @@
 
 * [1. Preámbulo](#1-preámbulo)
 * [2. Características](#2-características)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
+* [3. Definición del producto](#3-Definición-del-producto)
 * [4. Consideraciones generales](#4-consideraciones-generales)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
 * [6. Hacker edition](#6-hacker-edition)
@@ -47,20 +47,15 @@ Segundo proyecto para Laboratoria, implementando mayormente Javascript, seguido 
 Ha sido un camino difícil pero entretenido.
 
 
-
-
-
-
-
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de campeones en una liga del
-  juego League of Legends (LoL).
-  - [Investigación con jugadores de LoL](src/data/lol/README.md)
-
-
-## 3. 
-
-
+## 3. Definición del producto
+League of Legends (LoL) es un videojuego en línea que permite a los jugadores
+competir en partidas multijugador y mejorar sus habilidades. En la interfaz, los
+usuarios pueden ver información sobre los campeones, filtrar por sus roles,
+ordenarlos de manera alfabética, al igual incluir un orden descendente para el
+ataque, magia o defensa, así como sobre otros jugadores en su equipo y en el
+equipo contrario. Los usuarios utilizan el producto en cualquier momento del día
+para disfrutar de la experiencia de juego y mejorar sus habilidades en el tiempo
+de ocio.
 
 
 ### Diseño de producto
