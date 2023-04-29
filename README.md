@@ -6,7 +6,7 @@
 * [2. Características](#2-características)
 - - [Sobre mí](######-Sobre-mí-:waning_crescent_moon:)
 * [3. Definición del producto](#3-Definición-del-producto)
-- - [ Historias de usuario](###-Historias-de-usuario)
+* [4. Historias de usuario](##4-Historias-de-usuario)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
 * [6. Hacker edition](#6-hacker-edition)
 * [7. Consideraciones técnicas](#7-consideraciones-técnicas)
@@ -60,11 +60,47 @@ disfrutar de la experiencia de juego y mejorar sus habilidades en el tiempo de o
 ![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/LOLWEB.png)
 
 
-### Historias de usuario
+## 4. Historias de usuario
+**HU1:**  Para el usuario es importante saber cuál es el rol de cada campeón.
 
+**Como** usuario  nuevo del juego, **quiero** conocer el rol de cada campeón en el 
+juego **para** entender mejor cómo utilizarlos estratégicamente durante las partidas.
 
+###### **Descripción:** 
+*Es esencial que el usuario tenga un conocimiento detallado sobre el rol de cada campeón,* 
+*es decir, su función dentro del equipo y su estilo de juego. Los roles principales son: Tirador, Apoyo, Tanque,*
+*Luchador, Mago y Asesino. Cada uno de ellos tiene habilidades y características específicas que se adaptan a* 
+*diferentes situaciones y estrategias en el juego. Al conocer los roles de cada campeón, el jugador podrá tomar* 
+*decisiones más informadas y estratégicas a la hora de armar su equipo, lo que aumentará sus posibilidades de*
+*éxito en la partida.*
 
-### Diseño de la Interfaz de Usuario
+------------
+**HU2:** Es importante para el usuario poder saber quiénes son los más poderosos de cada rol.
+
+**Como** usuario que no conoce mucho de los poderes, **quiero** poder conocer los campeones más 
+poderosos cada rol en el juego, **para** poder tomar decisiones informadas al elegir a mi equipo 
+y estrategias durante las partidas.
+
+###### **Descripción:** 
+*Conocer la potencia y capacidad defensiva de cada personaje es crucial para armar un grupo estratégico que pueda* 
+*enfrentarse al enemigo. En LoL, existen campeones que se destacan por su poder ofensivo, mientras que otros destacan por* 
+*su capacidad defensiva. Por lo tanto, para el usuario, es importante saber quiénes son los más poderosos o defensivos* 
+*en cada rol, para poder elegir al mejor grupo de campeones que se adapte a su estrategia de juego y a las necesidades* 
+*del equipo.*
+
+------------
+**HU3:** Es importante conocer todas las habilidades de cada campeón y cómo estas pueden ser utilizadas.
+
+**Como** usuario que ya sabe que campeón usar y el rol de tal, **quiero** poder acceder a información 
+detallada sobre todas las habilidades de este u otros campeónes en el juego, **para** saber utilizarlas 
+efectivamente durante las partidas.
+
+###### **Descripción:** 
+*Al conocer la información detallada sobre todas las habilidades de cada campeón en el juego y cómo utilizarlas efectivamente* 
+*durante las partidas. El usuario lograra dominar las habilidades de cada campeón, podrá tomar decisiones más estratégicas* 
+*y efectivas que le permitan alcanzar la victoria en el juego.*
+
+### 5. Diseño de la Interfaz de Usuario
 
 #### Prototipo de baja fidelidad
 
@@ -75,16 +111,6 @@ disfrutar de la experiencia de juego y mejorar sus habilidades en el tiempo de o
 
 
 #### Testeos de usabilidad
-
-
-### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
-
-1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista,
-   etc.
-2. Permitir al usuario interactuar para obtener la infomación que necesita.
-3. Ser _responsive_, es decir, debe visualizarse sin problemas desde distintos
-   tamaños de pantallas: móviles, tablets y desktops.
-4. Que la interfaz siga los fundamentos de _visual design_.
 
 
 ### Primeros pasos
@@ -118,7 +144,7 @@ producto para mejorar sus habilidades y participar en competencias en línea.
 * Investigación con usuarios / entrevistas
 * Principios de diseño visual
 
-#### Herramientas
+#### Herramientas de Trabajo
 * [README, Laboratoria](https://github.com/Laboratoria/DEV006-data-lovers)
 * [Git](https://git-scm.com/)
 * [GitHub](https://github.com/)
