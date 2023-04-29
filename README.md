@@ -4,7 +4,6 @@
 
 * [1. Preámbulo](#1-preámbulo)
 * [2. Características](#2-características)
-- - [Sobre mí](######-Sobre-mí-:waning_crescent_moon:)
 * [3. Definición del producto](#3-Definición-del-producto)
 * [4. Historias de usuario](##4-Historias-de-usuario)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
@@ -43,7 +42,7 @@ con otros jugadores y mejorar su nivel de juego.
 4. **Funcionalidades de la página web:** *Debe permitir visualizar los datos, filtrarlos, ordenarlos* 
 *y hacer cálculos agregados para mostrar información relevante.*
 
-###### Sobre mí :waning_crescent_moon:
+##### Sobre mí :waning_crescent_moon:
 Segundo proyecto para Laboratoria, implementando mayormente Javascript, seguido por HTML y CSS.
 Ha sido un camino difícil pero entretenido.
 
@@ -64,7 +63,7 @@ disfrutar de la experiencia de juego y mejorar sus habilidades en el tiempo de o
 **HU1:**  Para el usuario es importante saber cuál es el rol de cada campeón.
 
 **Como** usuario  nuevo del juego, **quiero** conocer el rol de cada campeón en el 
-juego **para** entender mejor cómo utilizarlos estratégicamente durante las partidas.
+*LOL* **para** entender mejor cómo utilizarlos estratégicamente durante las partidas.
 
 ###### **Descripción:** 
 *Es esencial que el usuario tenga un conocimiento detallado sobre el rol de cada campeón,* 
@@ -102,18 +101,7 @@ efectivamente durante las partidas.
 
 ### 5. Diseño de la Interfaz de Usuario
 
-#### Prototipo de baja fidelidad
-
-
-
-#### Prototipo de alta fidelidad
-
-
-
-#### Testeos de usabilidad
-
-
-### Primeros pasos
+### 5.1 Primeros pasos
 * **¿Quiénes son los principales usuarios de producto?** 
 Los principales usuarios de ***League of Legends*** son jugadores de videojuegos en línea que 
 buscan una experiencia competitiva y desafiante. El juego atrae a jugadores de todas las 
@@ -136,6 +124,38 @@ Los usuarios de ***LoL*** utilizan el producto en cualquier momento del día, pe
 tiempo libre o en su tiempo de ocio. Muchos jugadores juegan en línea con amigos o familiares, lo 
 que aumenta la interacción social y la diversión del juego. También pueden utilizar el 
 producto para mejorar sus habilidades y participar en competencias en línea.
+
+#### 5.2 Prototipo de baja fidelidad
+
+
+
+#### 5.3 Prototipo de alta fidelidad
+**HU1** 
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH1%20DISE%C3%91O.png)
+
+###### *HU1 Usabilidad*
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH1%20USO.png)
+
+******
+**HU2** 
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH2%20DISE%C3%91O.png)
+
+###### *UH2 Usabilidad*
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH2%20USO.png)
+
+******
+**HU3** 
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH3%20DISE%C3%91O.png)
+
+###### *HU3 Usabilidad*
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH3%20USO.png)
+
+******
+
+#### Testeos de usabilidad
+
+
+
 
 ### Contenido de referencia
 
