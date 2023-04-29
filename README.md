@@ -4,7 +4,6 @@
 
 * [1. Preámbulo](#1-preámbulo)
 * [2. Características](#2-características)
-- [ Sobre mí :waning_crescent_moon:](######-Sobre-mí-:waning_crescent_moon:)
 * [3. Definición del producto](#3-Definición-del-producto)
 
 - [ Historias de usuario](###-Historias-de-usuario)
