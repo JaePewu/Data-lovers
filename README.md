@@ -8,10 +8,10 @@
 * [3. Definición del producto](#3-Definición-del-producto)
 * [4. Historias de usuario](##4-Historias-de-usuario)
 * [5. Diseño de la Interfaz de Usuario](##5-Diseño-de-la-Interfaz-de-Usuario)
-* *[5.1 Primeros pasos](####5.1-Primeros-pasos)
-* *[5.2 Pruebas de Color](####5.2-Pruebas-de-Color)
-* *[5.3 Prototipo de baja fidelidad](####5.3-Prototipo-de-baja-fidelidad)
-* *[5.4 Prototipo de alta fidelidad](####5.4-Prototipo-de-alta-fidelidad)
+* * [5.1 Primeros pasos](####5.1-Primeros-pasos)
+* * [5.2 Pruebas de Color](####5.2-Pruebas-de-Color)
+* * [5.3 Prototipo de baja fidelidad](####5.3-Prototipo-de-baja-fidelidad)
+* * [5.4 Prototipo de alta fidelidad](####5.4-Prototipo-de-alta-fidelidad)
 * [6. Herramientas de Trabajo](##6-Herramientas-de-Trabajo)
 * [7. Organización del Trabajo](##7-Organización-del-Trabajo)
 
@@ -140,15 +140,15 @@ al prototipo final para el usuario.
 #### 5.3 Prototipo de baja fidelidad
 
 **HU1 y Usabilidad**
-![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH1%20BAJA.png) ![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH1%20BAJA%20USO.png)
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH1%20BAJA%20USO.png)
 
 ****
 **HU2 y Usabilidad**
-![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH2%20BAJA.png) ![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH2%20BAJA%20USO.png)
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH2%20BAJA%20USO.png)
 
 ****
-**HU2 y Usabilidad**
-![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH3%20BAJA.png) ![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH3%20BAJA%20USO.png)
+**HU3 y Usabilidad**
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH3%20BAJA%20USO.png)
 
 ****
 
