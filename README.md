@@ -57,6 +57,7 @@ equipo contrario. Los usuarios utilizan el producto en cualquier momento del dí
 para disfrutar de la experiencia de juego y mejorar sus habilidades en el tiempo
 de ocio.
 
+![image]()
 
 ### Diseño de producto
 
@@ -73,7 +74,7 @@ de ocio.
 ## 4. 
 
 
-## 5. Criterios de aceptación mínimos del proyecto
+## 5. 
 
 ### Definición del producto
 
