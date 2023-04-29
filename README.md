@@ -4,8 +4,9 @@
 
 * [1. Preámbulo](#1-preámbulo)
 * [2. Características](#2-características)
+* [###### Sobre mí :waning_crescent_moon:](######-Sobre-mí-:waning_crescent_moon:)
 * [3. Definición del producto](#3-Definición-del-producto)
-* [4. Consideraciones generales](#4-consideraciones-generales)
+* [### Historias de usuario](###-Historias-de-usuario)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
 * [6. Hacker edition](#6-hacker-edition)
 * [7. Consideraciones técnicas](#7-consideraciones-técnicas)
@@ -57,30 +58,8 @@ equipo contrario. Los usuarios utilizan el producto en cualquier momento del dí
 para disfrutar de la experiencia de juego y mejorar sus habilidades en el tiempo
 de ocio.
 
-![image]()
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/LOLWEB.png)
 
-### Diseño de producto
-
-- [ ] **Crear prototipos de alta fidelidad que incluyan interacciones**
-
-- [ ] **Seguir los principios básicos de diseño visual**
-
-### Investigación
-
-- [ ] **Planear y ejecutar testeos de usabilidad de prototipos en distintos niveles de fidelidad**
-
-
-
-## 4. 
-
-
-## 5. 
-
-### Definición del producto
-
-Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
-contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuario.
 
 ### Historias de usuario
 
