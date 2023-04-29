@@ -1,4 +1,4 @@
-# Data Lovers/ League Of Legens
+# Data Lovers/ League Of Legends
 
 ## Tabla de contenidos
 
@@ -31,15 +31,22 @@ con otros jugadores y mejorar su nivel de juego.
 *en este caso se eligió para este proyecto los datos de League Of Legends.*
 
 * [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  - Este set de datos muestra la lista de campeones en una liga del
-  juego League of Legends (LoL).
+  - *Este set de datos muestra la lista de campeones en una liga del
+  juego League of Legends (LoL).*
 
-3. **Identificación del usuario:** *Se debe identificar quién es su usuario y qué necesita saber o* 
-*ver exactamente. Esto permitira ayudar a construir la interfaz donde se logra  interactuar y entender mejor la data.*
+3. **Identificación del usuario:** *Se debió identificar quién es su usuario y qué necesita saber o* 
+*ver exactamente. Esto permite ayudar a construir la interfaz donde se logra  interactuar y entender* 
+*mejor la data.*
 - [Investigación con jugadores de LoL](src/data/lol/README.md)
 
 4. **Funcionalidades de la página web:** *Debe permitir visualizar los datos, filtrarlos, ordenarlos* 
 *y hacer cálculos agregados para mostrar información relevante.*
+
+###### Sobre mí :waning_crescent_moon:
+Segundo proyecto para Laboratoria, implementando mayormente Javascript, seguido por HTML y CSS.
+Ha sido un camino difícil pero entretenido.
+
+
 
 
 
