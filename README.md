@@ -5,8 +5,7 @@
 * [1. Preámbulo](#1-preámbulo)
 * [2. Características](#2-características)
 * [3. Definición del producto](#3-Definición-del-producto)
-
-- [ Historias de usuario](###-Historias-de-usuario)
+[ Historias de usuario](###-Historias-de-usuario)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
 * [6. Hacker edition](#6-hacker-edition)
 * [7. Consideraciones técnicas](#7-consideraciones-técnicas)
