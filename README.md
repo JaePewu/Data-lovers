@@ -79,7 +79,6 @@ disfrutar de la experiencia de juego y mejorar sus habilidades en el tiempo de o
 
 ### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
 
-
 1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista,
    etc.
 2. Permitir al usuario interactuar para obtener la infomación que necesita.
@@ -88,27 +87,29 @@ disfrutar de la experiencia de juego y mejorar sus habilidades en el tiempo de o
 4. Que la interfaz siga los fundamentos de _visual design_.
 
 
-## 6. Hacker edition
-
-
-## 8. Pistas, tips y lecturas complementarias
-
 ### Primeros pasos
 * **¿Quiénes son los principales usuarios de producto?** 
-Los principales usuarios de League of Legends 
-son jugadores de videojuegos en línea que buscan una experiencia competitiva y 
-desafiante. El juego atrae a jugadores de todas las edades y habilidades, pero especialmente 
-a aquellos que disfrutan de juegos de estrategia multijugador en línea.
+Los principales usuarios de ***League of Legends*** son jugadores de videojuegos en línea que 
+buscan una experiencia competitiva y desafiante. El juego atrae a jugadores de todas las 
+edades y habilidades, pero especialmente a aquellos que disfrutan de juegos de estrategia 
+multijugador en línea.
 
 * **¿Cuáles son los objetivos de estos usuarios en relación con el producto?**
-**Los usuarios de LoL buscan disfrutar*
-de la experiencia de juego, mejorar sus habilidades y competir contra otros jugadores. El objetivo
-principal es ganar la partida, pero también disfrutar de la interacción con otros jugadores y 
-mejorar su nivel de juego.
+Los usuarios de ***LoL*** buscan disfrutar de la experiencia de juego, mejorar sus habilidades y 
+competir contra otros jugadores. El objetivo principal es ganar la partida, pero también 
+disfrutar de la interacción con otros jugadores y mejorar su nivel de juego.
 
-* ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
+* **¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?**
+Los usuarios de ***LoL*** quieren ver información sobre los campeones, sus habilidades y 
+estadísticas. También desean ver información sobre los otros jugadores en su equipo y en el 
+equipo contrario. Esto les ayuda a tomar decisiones informadas sobre la elección de campeones 
+y estrategias de juego.
 
-* ¿Cuándo utilizan o utilizarían el producto?
+* **¿Cuándo utilizan o utilizarían el producto?**
+Los usuarios de ***LoL*** utilizan el producto en cualquier momento del día, pero especialmente en su 
+tiempo libre o en su tiempo de ocio. Muchos jugadores juegan en línea con amigos o familiares, lo 
+que aumenta la interacción social y la diversión del juego. También pueden utilizar el 
+producto para mejorar sus habilidades y participar en competencias en línea.
 
 ### Contenido de referencia
 
