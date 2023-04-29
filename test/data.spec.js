@@ -1,28 +1,6 @@
 import { filtroPorRol, ordenarPorZa, ordenarPorAz, ordenarPoder} from '../src/data.js';
 
-
-/*describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
-
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});*/
-
-
+/****** TEST DE FILTRO ***********/
 describe('filtroPorRol', () => {
   const baseDatos = [
     { name: 'Ashe', tags: ['Marksman', 'Support'] },
@@ -50,7 +28,7 @@ describe('filtroPorRol', () => {
   });
 });
 
-
+/************ TEST DE ORDEN Z - A *************/
 describe('ordenarPorZa',() => {
   it('debería una funciön', () => {
     expect(typeof ordenarPorZa).toBe('function');
@@ -63,7 +41,7 @@ describe('ordenarPorZa',() => {
   });
 });
 
-
+/************ TEST DE ORDEN A - Z *************/
 describe('ordenarPorAz',() => {
   it('debería una funciön', () => {
     expect(typeof ordenarPorAz).toBe('function');
@@ -77,7 +55,7 @@ describe('ordenarPorAz',() => {
 });
 
 
-
+/************ TEST DE ORDEN PODER *************/
 describe('ordenarPoder', () => {
   const baseDatos = [
     {name: 'Zed', info: {attack: 9, defense: 2, magic: 1}},
