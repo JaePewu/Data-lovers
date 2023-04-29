@@ -25,6 +25,7 @@ mejorar sus habilidades y competir contra otros jugadores en un ambiente multiju
 línea. El objetivo principal es ganar la partida, pero también disfrutar de la interacción 
 con otros jugadores y mejorar su nivel de juego.
 
+****
 
 ## 2. Características
 
@@ -50,6 +51,7 @@ con otros jugadores y mejorar su nivel de juego.
 Segundo proyecto para Laboratoria, implementando mayormente Javascript, seguido por HTML y CSS.
 Ha sido un camino difícil pero entretenido.
 
+****
 
 ## 3. Definición del producto
 League of Legends (LoL) es un videojuego en línea que permite a los jugadores
@@ -62,6 +64,7 @@ disfrutar de la experiencia de juego y mejorar sus habilidades en el tiempo de o
 
 ![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/LOLWEB.png)
 
+****
 
 ## 4. Historias de usuario
 **HU1:**  Para el usuario es importante saber cuál es el rol de cada campeón.
@@ -103,6 +106,8 @@ efectivamente durante las partidas.
 *durante las partidas. El usuario lograra dominar las habilidades de cada campeón, podrá tomar decisiones más estratégicas* 
 *y efectivas que le permitan alcanzar la victoria en el juego.*
 
+****
+
 ## 5. Diseño de la Interfaz de Usuario
 
 #### 5.1 Primeros pasos
@@ -135,7 +140,13 @@ muy coloridas, así que realice unas pruebas de color, con diferentes fondos, si
 bienvenida se realiza un segundo prototipo de prueba, con las imágenes de los campeones. Así se llegó 
 al prototipo final para el usuario.
 
-![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/PRUEBA%20DE%20COLOR%201%20Y%202.png) ![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/PRUEBA%20DE%20COLOR%203%20Y%204.png) ![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/PRUEBA%20DE%20COLOR%205%2C%206%20Y%207.png) 
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/PRUEBA%20DE%20COLOR%201%20Y%202.png) 
+
+------
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/PRUEBA%20DE%20COLOR%203%20Y%204.png) 
+
+------
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/PRUEBA%20DE%20COLOR%205%2C%206%20Y%207.png) 
 
 #### 5.3 Prototipo de baja fidelidad
 
