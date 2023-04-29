@@ -188,8 +188,7 @@ al prototipo final para el usuario.
 
 ## 7. Organización del Trabajo
 La mejor forma que encontré para organizarme, fue a través de **TRELLO**, aunque en un principio me dificulto
- exactamente que colocar en él, al volver a leer el *README*, comencé a agregar punto de los cuales sé 
- leían en el documento. Así, logre organizarlo tanto como en *sprint*, como por tareas de manera individual 
+ exactamente que colocar en él, al volver a leer el *README*, comencé a agregar puntos importante de los cuales, eran importante al momento del la entrega del proyecto. Así, logre organizarlo tanto como en *sprint*, como por tareas de manera individual 
  o general.
 
 ![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/TRELLO.png)
