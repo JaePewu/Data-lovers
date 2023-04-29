@@ -4,7 +4,7 @@
 
 * [1. Preámbulo](#1-preámbulo)
 * [2. Características](#2-características)
-- - [ Sobre mí](######-Sobre-mí-:waning_crescent_moon:)
+- - [Sobre mí](######-Sobre-mí-:waning_crescent_moon:)
 * [3. Definición del producto](#3-Definición-del-producto)
 - - [ Historias de usuario](###-Historias-de-usuario)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
@@ -54,9 +54,8 @@ competir en partidas multijugador y mejorar sus habilidades. En la interfaz, los
 usuarios pueden ver información sobre los campeones, filtrar por sus roles,
 ordenarlos de manera alfabética, al igual incluir un orden descendente para el
 ataque, magia o defensa, así como sobre otros jugadores en su equipo y en el
-equipo contrario. Los usuarios utilizan el producto en cualquier momento del día
-para disfrutar de la experiencia de juego y mejorar sus habilidades en el tiempo
-de ocio.
+equipo contrario. Los usuarios utilizan el producto en cualquier momento del día para
+disfrutar de la experiencia de juego y mejorar sus habilidades en el tiempo de ocio.
 
 ![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/LOLWEB.png)
 
@@ -95,17 +94,21 @@ de ocio.
 ## 8. Pistas, tips y lecturas complementarias
 
 ### Primeros pasos
+* **¿Quiénes son los principales usuarios de producto?** 
+Los principales usuarios de League of Legends 
+son jugadores de videojuegos en línea que buscan una experiencia competitiva y 
+desafiante. El juego atrae a jugadores de todas las edades y habilidades, pero especialmente 
+a aquellos que disfrutan de juegos de estrategia multijugador en línea.
 
+* **¿Cuáles son los objetivos de estos usuarios en relación con el producto?**
+**Los usuarios de LoL buscan disfrutar*
+de la experiencia de juego, mejorar sus habilidades y competir contra otros jugadores. El objetivo
+principal es ganar la partida, pero también disfrutar de la interacción con otros jugadores y 
+mejorar su nivel de juego.
 
-* ¿Quiénes son los principales usuarios de producto?
-* ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
 * ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
+
 * ¿Cuándo utilizan o utilizarían el producto?
-* Toda tu investigación previa debe tener como resultado todas las Historias
-  de Usuario de tu proyecto.
-* No hagas los prototipos de alta fidelidad de todas tus Historias. Comienza
-  solamente por los que se necesiten para tu Sprint 1 (semana 1 de trabajo). Más
-  pistas en la guía de organización para el proyecto.
 
 ### Contenido de referencia
 
@@ -114,12 +117,8 @@ de ocio.
 * Investigación con usuarios / entrevistas
 * Principios de diseño visual
 
-#### Desarrollo Front-end
-
-
-
 #### Herramientas
-
+* [README, Laboratoria](https://github.com/Laboratoria/DEV006-data-lovers)
 * [Git](https://git-scm.com/)
 * [GitHub](https://github.com/)
 * [GitHub Pages](https://pages.github.com/)
