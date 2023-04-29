@@ -1,16 +1,19 @@
-# Data Lovers/ League Of Legends
+# Data Lovers/ League Of Legends:waning_crescent_moon:
 
 ## Tabla de contenidos
 
 * [1. Preámbulo](#1-preámbulo)
 * [2. Características](#2-características)
+* * [2.1 Sobre mí :waning_crescent_moon:](###2.1-Sobre-mí-:waning_crescent_moon:)
 * [3. Definición del producto](#3-Definición-del-producto)
 * [4. Historias de usuario](##4-Historias-de-usuario)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
+* [5. Diseño de la Interfaz de Usuario](##5-Diseño-de-la-Interfaz-de-Usuario)
+* *[5.1 Primeros pasos](####5.1-Primeros-pasos)
+* *[5.2 Pruebas de Color](####5.2-Pruebas-de-Color)
+* *[5.3 Prototipo de baja fidelidad](####5.3-Prototipo-de-baja-fidelidad)
+* *[5.4 Prototipo de alta fidelidad](####5.4-Prototipo-de-alta-fidelidad)
+* [6. Herramientas de Trabajo](##6-Herramientas-de-Trabajo)
+* [7. Organización del Trabajo](##7-Organización-del-Trabajo)
 
 ***
 
@@ -24,6 +27,7 @@ con otros jugadores y mejorar su nivel de juego.
 
 
 ## 2. Características
+
 1. **Desarrollo de una página web:** *El proyecto consiste en desarrollar una web que permita*
  *visualizar un conjunto de datos.*
 
@@ -42,7 +46,7 @@ con otros jugadores y mejorar su nivel de juego.
 4. **Funcionalidades de la página web:** *Debe permitir visualizar los datos, filtrarlos, ordenarlos* 
 *y hacer cálculos agregados para mostrar información relevante.*
 
-##### Sobre mí :waning_crescent_moon:
+### 2.1 Sobre mí :waning_crescent_moon:
 Segundo proyecto para Laboratoria, implementando mayormente Javascript, seguido por HTML y CSS.
 Ha sido un camino difícil pero entretenido.
 
@@ -99,9 +103,9 @@ efectivamente durante las partidas.
 *durante las partidas. El usuario lograra dominar las habilidades de cada campeón, podrá tomar decisiones más estratégicas* 
 *y efectivas que le permitan alcanzar la victoria en el juego.*
 
-### 5. Diseño de la Interfaz de Usuario
+## 5. Diseño de la Interfaz de Usuario
 
-### 5.1 Primeros pasos
+#### 5.1 Primeros pasos
 * **¿Quiénes son los principales usuarios de producto?** 
 Los principales usuarios de ***League of Legends*** son jugadores de videojuegos en línea que 
 buscan una experiencia competitiva y desafiante. El juego atrae a jugadores de todas las 
@@ -125,11 +129,30 @@ tiempo libre o en su tiempo de ocio. Muchos jugadores juegan en línea con amigo
 que aumenta la interacción social y la diversión del juego. También pueden utilizar el 
 producto para mejorar sus habilidades y participar en competencias en línea.
 
-#### 5.2 Prototipo de baja fidelidad
+#### 5.2 Pruebas de Color
+Antes de comenzar los prototipos de Alta fidelidad, me di cuenta de que las imágenes de la data eran 
+muy coloridas, así que realice unas pruebas de color, con diferentes fondos, si pasaban la imagen de 
+bienvenida se realiza un segundo prototipo de prueba, con las imágenes de los campeones. Así se llegó 
+al prototipo final para el usuario.
 
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/PRUEBA%20DE%20COLOR%201%20Y%202.png) ![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/PRUEBA%20DE%20COLOR%203%20Y%204.png) ![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/PRUEBA%20DE%20COLOR%205%2C%206%20Y%207.png) 
 
+#### 5.3 Prototipo de baja fidelidad
 
-#### 5.3 Prototipo de alta fidelidad
+**HU1 y Usabilidad**
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH1%20BAJA.png) ![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH1%20BAJA%20USO.png)
+
+****
+**HU2 y Usabilidad**
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH2%20BAJA.png) ![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH2%20BAJA%20USO.png)
+
+****
+**HU2 y Usabilidad**
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH3%20BAJA.png) ![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH3%20BAJA%20USO.png)
+
+****
+
+#### 5.4 Prototipo de alta fidelidad
 **HU1** 
 ![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH1%20DISE%C3%91O.png)
 
@@ -151,20 +174,11 @@ producto para mejorar sus habilidades y participar en competencias en línea.
 ![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/UH3%20USO.png)
 
 ******
-
-#### Testeos de usabilidad
-
-
+**HU1,2 y 3 en Smartphone**
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/DISE%C3%91O%20PHONE.png) ![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/PROTOTIPO%20USO%20PHONE.png)
 
 
-### Contenido de referencia
-
-#### Diseño de experiencia de usuario (User Experience Design)
-
-* Investigación con usuarios / entrevistas
-* Principios de diseño visual
-
-#### Herramientas de Trabajo
+## 6. Herramientas de Trabajo
 * [README, Laboratoria](https://github.com/Laboratoria/DEV006-data-lovers)
 * [Git](https://git-scm.com/)
 * [GitHub](https://github.com/)
@@ -172,6 +186,12 @@ producto para mejorar sus habilidades y participar en competencias en línea.
 * [Node.js](https://nodejs.org/)
 * [Jest](https://jestjs.io/)
 
-#### Organización del Trabajo
+## 7. Organización del Trabajo
+La mejor forma que encontré para organizarme, fue a través de **TRELLO**, aunque en un principio me dificulto
+ exactamente que colocar en él, al volver a leer el *README*, comencé a agregar punto de los cuales sé 
+ leían en el documento. Así, logre organizarlo tanto como en *sprint*, como por tareas de manera individual 
+ o general.
+
+![image](https://github.com/JaePewu/Data-lovers/blob/main/src/img%20readme/TRELLO.png)
 
 
