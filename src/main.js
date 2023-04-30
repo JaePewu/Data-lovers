@@ -6,17 +6,16 @@ import { header, main, footer } from './content.js';
 
 
 const encaezadoContainer = document.createElement(`header`);
+const footContainer = document.createElement(`footer`);
+const mainContainer = document.createElement(`main`);
+
 encaezadoContainer.innerHTML = header;
 document.body.appendChild(encaezadoContainer);
 
-const footContainer = document.createElement(`footer`);
 footContainer.innerHTML = footer;
 document.body.appendChild(footContainer);
 
-
-
 /* *****LLAMANDO A LA MAIN DE CAMPEONES******* */
-const mainContainer = document.createElement(`main`);
 mainContainer.innerHTML = main;
 document.body.appendChild(mainContainer);
 
@@ -50,8 +49,8 @@ function desplegarCampeones(dataCampeones){
     campeonFigure.appendChild(nombreBoton); 
     
     root.appendChild(campeonFigure); 
-  })
-}
+  });
+};
 desplegarCampeones(campeones);
 
 
