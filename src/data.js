@@ -1,6 +1,6 @@
 // *** FUNCION PARA FILTRAR POR ROL ******//
 export const filtroPorRol = (baseDatos, rol) => {
-  const dataFiltrada = baseDatos.filter(campeon => campeon.tags.includes(rol));
+  const dataFiltrada = baseDatos.filter(campeon => campeon.tags.includes(rol));// filtrar elementos de una matriz (array) en función de un criterio específico y crear una nueva matriz
   return dataFiltrada;
 };//*FIN DE FILTRO*//
 
@@ -12,7 +12,7 @@ export const ordenarPorZa = (baseDatos) =>{
 };
 
 export const ordenarPorAz = (baseDatos) => {
-  const campeonesAZ = baseDatos.sort ((a, z) => a.name.localeCompare(z.name));
+  const campeonesAZ = baseDatos.sort ((a, z) => a.name.localeCompare(z.name));//ordena los elementos de una matriz en su lugar, lo que significa que modifica la matriz original y no crea una nueva matriz ordenada.
   return campeonesAZ;/*Localcompare compara dos cadenas de texto */
 };
 
