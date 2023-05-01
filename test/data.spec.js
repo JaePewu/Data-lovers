@@ -1,4 +1,4 @@
-import { filtroPorRol, ordenarPorZa, ordenarPorAz, ordenarPoder} from '../src/data.js';
+import { filtroPorRol, ordenarPorZa, ordenarPorAz, ordenarPoder, porcentajeRoles} from '../src/data.js';
 
 /****** TEST DE FILTRO ***********/
 describe('filtroPorRol', () => {
@@ -78,4 +78,19 @@ describe('ordenarPoder', () => {
   });
 });
 
+/************ TEST DE PORCENTAJE *************/
+describe('porcentajeRoles', () => {
 
+  it('debería una funciön', () => {
+    expect(typeof porcentajeRoles).toBe('function');
+  });
+
+  it("debería devolver 0 cuando dataRol es igual a 0", () => {
+    expect(porcentajeRoles(10, 0)).toEqual(0);
+  });
+
+  it("debería devolver el porcentaje correcto cuando tanto dataCampeones como dataRol son números enteros positivos", () => {
+    expect(porcentajeRoles(100, 20)).toEqual(20);
+  });
+
+});
