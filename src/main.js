@@ -1,46 +1,53 @@
-import { filtroPorRol, ordenarPorZa, ordenarPorAz, ordenarPoder, /*porcentajeRoles*/ } from './data.js';
+import { filtroPorRol, ordenarPorZa, ordenarPorAz, ordenarPoder, porcentajeRoles } from './data.js';
 import data from './data/lol/lol.js';
 
 import { header, main, footer } from './content.js';
 //importa el codigo de content.js y se ve en mi web como html
 
-
-const encaezadoContainer = document.createElement(`header`);
+/* ****** CONSTANTES ********* */
+const encabezadoContainer = document.createElement(`header`);
 const footContainer = document.createElement(`footer`);
 const mainContainer = document.createElement(`main`);
+const footContainer2 = footContainer.cloneNode(true);/* código crea una copia exacta*/
 
-encaezadoContainer.innerHTML = header;
-document.body.appendChild(encaezadoContainer);
+
+
+encabezadoContainer.innerHTML = header;
+document.body.appendChild(encabezadoContainer);
 
 footContainer.innerHTML = footer;
 document.body.appendChild(footContainer);
 
-/* *****LLAMANDO A LA MAIN DE CAMPEONES******* */
 mainContainer.innerHTML = main;
 document.body.appendChild(mainContainer);
 
-const footContainer2 = footContainer.cloneNode(true);/* código crea una copia exacta*/
+
 footContainer2.classList.add('footerCampeon');
 document.body.appendChild(footContainer2);
 
 
 
 
-/* ******LLAMADO DE DATA CAMPEONES********* */
+/* ****** CONSTANTES PARA SECCION DE MAIN CAMPEONES ********* */
 const root = document.querySelector('#root');
 const campeones = Object.values(data.campeones); //transformo en matriz la data.
+let dataFiltrada = campeones;
+const totalCampeones = campeones.length;//para saber el total de campeones
+const ordenarPorSelect = document.getElementById("ordenarPor");//llamando por el elemento id
+const mensajePorcentaje = document.getElementById("parrafoPorcentaje"); //llamado para modificar el parrafo
 
+
+
+/************************     MUESTRA LA DATA DE CAMPEONES     ******************************/
 function desplegarCampeones(dataCampeones){
   dataCampeones.forEach(element => {
     const campeonFigure = document.createElement('figure'); 
     const imagenCampeon = document.createElement('img'); 
-    const nombreBoton = document.createElement('button'); 
-    
+    const nombreBoton = document.createElement('button');
     
     imagenCampeon.src = element.img; 
     nombreBoton.textContent = element.name;
     
-
     campeonFigure.setAttribute("id", "figureCampeon"); 
     imagenCampeon.setAttribute("id", "imgCampeon"); 
     nombreBoton.setAttribute("id", "btnNombre"); 
@@ -50,12 +57,92 @@ function desplegarCampeones(dataCampeones){
     
     root.appendChild(campeonFigure); 
   });
-};
+}
+
+/*************        ORDENAR POR SELECT       *****************/
+function laOrdenadora(){
+  const value = ordenarPorSelect.value;
+  /*let selectPoder = campeones.info;*/
+  if (value === "z-a"){
+    dataFiltrada = ordenarPorZa(dataFiltrada);
+  }else if(value === "a-z"){
+    dataFiltrada = ordenarPorAz(dataFiltrada);
+  }else if(value === "ataque"){
+    const poder = "attack"
+    dataFiltrada = ordenarPoder(dataFiltrada,poder);
+  }else if(value === "magia"){
+    const  poder = "magic"
+    dataFiltrada = ordenarPoder(dataFiltrada, poder);
+  }else if(value === "defensa"){
+    const poder = "defense"
+    dataFiltrada = ordenarPoder(dataFiltrada, poder);
+  }else{
+    dataFiltrada = ordenarPorAz(dataFiltrada);
+  }
+}
+
+/****************    ESCUCHA  DE  ORDENAR POR SELECT    ******************/
+ordenarPorSelect.addEventListener("change", () => {
+  root.innerHTML = "";
+  laOrdenadora();
+  desplegarCampeones(dataFiltrada);
+});
+
 desplegarCampeones(campeones);
 
 
+
+/* ***************     FILTROS    POR    ROL            *************** */
+document.querySelector("#todos").addEventListener("click", () => {
+  root.innerHTML = "";
+  dataFiltrada = campeones;
+  
+  const mensajePorcentaje = document.getElementById("parrafoPorcentaje"); 
+  mensajePorcentaje.textContent = "";
+
+  laOrdenadora();
+  desplegarCampeones(dataFiltrada);
+});
+
+const actualizarCampeonesPorRol = (tagSelect,tagEspanol) => {//TAGESPANOL, variable creada para que elija el 2do parametro en español y mostrarla
+  root.innerHTML ="";
+  dataFiltrada = filtroPorRol(campeones,tagSelect);
+  const totalRol = dataFiltrada.length;
+  const porcentajeDeRol = porcentajeRoles(totalCampeones, totalRol);
+
+  mensajePorcentaje.textContent = "La cantidad de campeones que tienen el rol de "+ tagEspanol + " es del " + porcentajeDeRol + "%.";
+
+  laOrdenadora();
+  desplegarCampeones(dataFiltrada);
+}
+
+document.querySelector("#asesinos").addEventListener("click", () => {
+  actualizarCampeonesPorRol("Assassin","Asesino");
+});
+
+document.querySelector("#luchadores").addEventListener("click", () => {
+  actualizarCampeonesPorRol("Fighter", "Luchador");
+});
+
+document.querySelector("#magos").addEventListener("click", () => {
+  actualizarCampeonesPorRol("Mage", "Mago");
+});
+
+document.querySelector("#tiradores").addEventListener("click", () => {
+  actualizarCampeonesPorRol("Marksman", "Tirador");
+});
+
+document.querySelector("#apoyo").addEventListener("click", () => {
+  actualizarCampeonesPorRol("Support", "Apoyo");
+});
+
+document.querySelector("#tanque").addEventListener("click", () => {
+  actualizarCampeonesPorRol("Tank", "Tanque");
+});/*FIN filtrado por rol */
+
+
 /******  ******/
-const todos = document.querySelector("#todos");
+//const todos = document.querySelector("#todos");
 /*const roleCheckboxes = document.querySelectorAll("#roles .role");
 
 todos.addEventListener("change", function() {
@@ -70,109 +157,9 @@ todos.addEventListener("change", function() {
   }
 });*/
 
-/* **** FILTROS POR ROL***** */
-let dataFiltrada = campeones;
-
-/*const totalCampeones = campeones.length;
-console.log(totalCampeones);*/
-
-todos.addEventListener("click", () => {
-  root.innerHTML = "";
-  dataFiltrada = campeones;
-  laOrdenadora();
-  desplegarCampeones(dataFiltrada);
-});
-
-document.querySelector("#asesinos").addEventListener("click", () => {
-  root.innerHTML = "";
-  const tagSelect = "Assassin";
-  dataFiltrada = filtroPorRol(campeones,tagSelect);
-  laOrdenadora();
-  desplegarCampeones(dataFiltrada);
-  
-});
-
-document.querySelector("#luchadores").addEventListener("click", () => {
-  root.innerHTML = "";
-  const tagSelect = "Fighter";
-  dataFiltrada = filtroPorRol(campeones,tagSelect);
-  laOrdenadora();
-  desplegarCampeones(dataFiltrada);
-});
-
-document.querySelector("#magos").addEventListener("click", () => {
-  root.innerHTML = "";
-  const tagSelect = "Mage";
-  dataFiltrada = filtroPorRol(campeones,tagSelect);
-  laOrdenadora();
-  desplegarCampeones(dataFiltrada);
-});
-
-document.querySelector("#tiradores").addEventListener("click", () => {
-  root.innerHTML = "";
-  const tagSelect = "Marksman";
-  dataFiltrada = filtroPorRol(campeones,tagSelect);
-  laOrdenadora();
-  desplegarCampeones(dataFiltrada);
-});
-
-document.querySelector("#apoyo").addEventListener("click", () => {
-  root.innerHTML = "";
-  const tagSelect = "Support";
-  dataFiltrada = filtroPorRol(campeones,tagSelect);
-  laOrdenadora();
-  desplegarCampeones(dataFiltrada);
-});
-
-document.querySelector("#tanque").addEventListener("click", () => {
-  root.innerHTML = "";
-  const tagSelect = "Tank";
-  dataFiltrada = filtroPorRol(campeones,tagSelect);
-  laOrdenadora();
-  desplegarCampeones(dataFiltrada);
-});/*FIN filtrado por rol */
 
 
-const ordenarPorSelect = document.getElementById("ordenarPor");
-//const campeonInfo = dataFiltrada.flatMap(campeon => campeon.info)
 
-ordenarPorSelect.addEventListener("change", () => {
-  laOrdenadora();
-  desplegarCampeones(dataFiltrada);
-});
-
-function laOrdenadora(){
-  const value = ordenarPorSelect.value;
-  /*let selectPoder = campeones.info;*/
-
-  if (value === "z-a"){
-    root.innerHTML = "";
-    dataFiltrada = ordenarPorZa(dataFiltrada);
-    
-  }else if(value === "a-z"){
-    root.innerHTML = "";
-    dataFiltrada = ordenarPorAz(dataFiltrada);
-   
-  }else if(value === "ataque"){
-    root.innerHTML = "";
-    const poder = "attack"
-    dataFiltrada = ordenarPoder(dataFiltrada,poder);
-    
-  }else if(value === "magia"){
-    root.innerHTML = "";
-    const  poder = "magic"
-    dataFiltrada = ordenarPoder(dataFiltrada, poder);
-
-  }else if(value === "defensa"){
-    root.innerHTML = "";
-    const poder = "defense"
-    dataFiltrada = ordenarPoder(dataFiltrada, poder);
-
-  }else{
-    root.innerHTML = "";
-    dataFiltrada = ordenarPorAz(dataFiltrada);
-  }
-}
 
 /*const selectRoles = document.getElementById("#role")
 selectRoles.addEventListener("change", () => {

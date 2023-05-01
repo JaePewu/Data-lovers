@@ -57,14 +57,14 @@ export const main = `<main>
       <label for="buscarCampeon"><img id="lupitaCampion" src="./icon/search.png" alt="icono-lupa"></label>
       <input type="search" id="buscarCampeon" placeholder="Buscar campeón...">
       <label for="ordenarPor">|</label>
-      <select id="ordenarPor">
-        <option value="ordenarPor">Ordenar por</option>
-          <option value="a-z">A-Z</option>
-          <option value="z-a">Z-A</option>
-          <option value="ataque">Ataque</option>
-          <option value="magia">Magia</option>
-          <option value="defensa">Defensa</option>
-      </select>
+        <select id="ordenarPor">
+          <option value="ordenarPor">Ordenar por</option>
+            <option value="a-z">A-Z</option>
+            <option value="z-a">Z-A</option>
+            <option value="ataque">Ataque</option>
+            <option value="magia">Magia</option>
+            <option value="defensa">Defensa</option>
+        </select>
       </div>
       <div id="container2">
       <ul id="roles">
@@ -78,14 +78,17 @@ export const main = `<main>
         </ul>
         
       <label for="dificultad" >|</label>
-      <select id="dificultad">
-        <option value="">Dificultad</option>
-          <option value="facil">Fácil</option>
-          <option value="mediano">Mediano</option>
-          <option value="dificil">Difícil</option>
-      </select>
+          <select id="dificultad">
+            <option value="">Dificultad</option>
+              <option value="facil">Fácil</option>
+              <option value="mediano">Mediano</option>
+              <option value="dificil">Difícil</option>
+          </select>
       </div>
       </div>
+          <section>
+          <p id="parrafoPorcentaje"></p>
+          </section>
       <div id="root"></div>
       </main>`
 

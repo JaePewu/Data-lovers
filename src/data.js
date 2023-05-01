@@ -29,7 +29,7 @@ export const ordenarPoder = (baseDatos,poder) => {
 
 
 //******* FUNCION PARA SACAR PORCENTAJE *********/
-/*export const porcentajeRoles = (dataCampeones, dataRol) => {
-  const rolTotal = (dataRol / dataCampeones) * 100;
+export const porcentajeRoles = (dataCampeones, dataRol) => {
+  const rolTotal = ((dataRol / dataCampeones).toFixed(2)) * 100;//para redondear ese valor decimal a la cantidad de decimales que desees
   return rolTotal;
-};*/
+};
